@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.system.dao.CompanyMapper">
+    <resultMap id="BaseResultMap" type="cc.mrbird.febs.system.domain.Company">
+        <id column="COMPANY_ID" jdbcType="DECIMAL" property="companyId"/>
+        <result column="companyName" jdbcType="VARCHAR" property="companyName"/>
+        <result column="avatar" jdbcType="VARCHAR" property="avatar"/>
+        <result column="companyAddress" jdbcType="VARCHAR" property="companyAddress"/>
+        <result column="FINANCE" jdbcType="VARCHAR" property="finance"/>
+        <result column="SCALE" jdbcType="VARCHAR" property="scale"/>
+        <result column="TRADE" jdbcType="VARCHAR" property="trade"/>
+        <result column="NATURE" jdbcType="VARCHAR" property="nature"/>
+        <result column="INFO" jdbcType="VARCHAR" property="info"/>
+        <result column="TAG1" jdbcType="VARCHAR" property="tag1"/>
+        <result column="TAG2" jdbcType="VARCHAR" property="tag2"/>
+        <result column="TAG3" jdbcType="VARCHAR" property="tag3"/>
+        <result column="createTime" jdbcType="DATE" property="createTime"/>
+        <result column="MODIFY_TIME" jdbcType="DATE" property="modifyTime"/>
+    </resultMap>
+
+    <select id="findCompanyDetail" parameterType="company" resultMap="BaseResultMap">
+        select
+        t.COMPANY_ID,
+        t.COMPANY_NAME companyName,
+        t.COMPANY_ADDRESS companyAddress,
+        t.finance,
+        t.avatar,
+        t.scale,
+        t.nature,
+        t.trade,
+        t.info,
+        t.tag1,
+        t.tag2,
+        t.tag3,
+        t.CREATE_TIME createTime,
+        t.MODIFY_TIME
+        from t_company t
+        where 1=1
+        <if test="company.companyName!=null and company.companyName!=''">
+            and t.COMPANY_NAME like '%${company.companyName}%'
+        </if>
+        <if test="company.companyAddress!=null and company.companyAddress!=''">
+            and t.COMPANY_ADDRESS like '%${company.companyAddress}%'
+        </if>
+        <if test="company.nature!=null and company.nature!=''">
+            and t.nature like '%${company.nature}%'
+        </if>
+        <if test="company.createTimeFrom != null and company.createTimeFrom !=''">
+            And t.CREATE_TIME &gt; #{company.createTimeFrom}
+        </if>
+        <if test="company.createTimeTo!= null and company.createTimeTo !=''">
+            And t.CREATE_TIME &lt; #{company.createTimeTo}
+        </if>
+    </select>
+</mapper>

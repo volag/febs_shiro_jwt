@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.project.dao.ProjectContactMapper">
+    <resultMap id="BaseResultMap" type="cc.mrbird.febs.project.domain.ProjectContact">
+        <id column="PROJECT_CONTACT_ID" jdbcType="DECIMAL" property="projectContactId"/>
+        <result column="PERSON_PROJECT_ID" jdbcType="DECIMAL" property="personProjectId"/>
+        <result column="USER_ID" jdbcType="DECIMAL" property="userId"/>
+        <result column="CONTACT_TYPE" jdbcType="VARCHAR" property="contactType"/>
+        <result column="PERSON_STATUS" jdbcType="VARCHAR" property="personStatus"/>
+        <result column="PERSON_NAME" jdbcType="VARCHAR" property="personName"/>
+        <result column="COMPANY_NAME" jdbcType="VARCHAR" property="companyName"/>
+        <result column="MOBILE_PHONE" jdbcType="VARCHAR" property="phone"/>
+        <result column="PROJECT_NAME" jdbcType="VARCHAR" property="projectName"/>
+        <result column="PROJECT_STATUS" jdbcType="VARCHAR" property="projectStatus"/>
+        <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime"/>
+    </resultMap>
+
+    <select id="findProjectContactDetail" parameterType="projectContact" resultMap="BaseResultMap">
+        select
+        t.PROJECT_CONTACT_ID,
+        t.PERSON_PROJECT_ID,
+        t.CONTACT_TYPE,
+        tp.PERSON_STATUS,
+        tpe.PERSON_NAME,
+        tpe.MOBILE_PHONE,
+        tpp.PROJECT_STATUS,
+        tpp.COMPANY_NAME,
+        tpp.PROJECT_NAME,
+        t.MODIFY_TIME,
+        t.CREATE_TIME
+        from t_project_contact t
+        LEFT JOIN t_person_project tp on (tp.PERSON_PROJECT_ID = t.PERSON_PROJECT_ID)
+        LEFT JOIN t_project tpp on (tpp.PROJECT_ID = tp.PROJECT_ID)
+        LEFT JOIN t_person tpe on tpe.PERSON_ID = tp.PERSON_ID
+        where 1=1
+        <if test="projectContact.userId != null and projectContact.userId != ''">
+            and tp.USER_ID = #{projectContact.userId}
+        </if>
+    </select>
+
+</mapper>

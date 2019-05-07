@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.trade.dao.TradeDirectionMapper">
+    <resultMap id="BaseResultMap" type="cc.mrbird.febs.trade.domain.TradeDirection">
+        <id column="ID" jdbcType="DECIMAL" property="id"/>
+        <result column="TRADE_ID" jdbcType="DECIMAL" property="tradeId"/>
+        <result column="DIRECTION_NAME" jdbcType="VARCHAR" property="directionName"/>
+        <result column="DIRECTION_CODE" jdbcType="VARCHAR" property="directionCode"/>
+    </resultMap>
+
+</mapper>

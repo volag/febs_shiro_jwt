@@ -1,0 +1,757 @@
+2019-04-11 09:21:43.620 febs [main] INFO  cc.mrbird.febs.FebsApplication - Starting FebsApplication on DESKTOP-L5UH5E4 with PID 14880 (D:\demo\vue\FEBS-Vue\backend\target\classes started by volga in D:\demo\vue\FEBS-Vue\backend)
+2019-04-11 09:21:43.623 febs [main] INFO  cc.mrbird.febs.FebsApplication - No active profile set, falling back to default profiles: default
+2019-04-11 09:21:49.550 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-11 09:21:49.553 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-11 09:21:49.664 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90ms. Found 0 repository interfaces.
+2019-04-11 09:21:50.056 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncExecutorPoolConfig' of type [cc.mrbird.febs.common.config.AsyncExecutorPoolConfig$$EnhancerBySpringCGLIB$$6f58dafb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:50.407 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:50.544 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$49a8269f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:50.553 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:50.557 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:50.568 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e019b5ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:50.670 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$4b99b777] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:50.962 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [cc.mrbird.febs.common.config.RedisConfig$$EnhancerBySpringCGLIB$$445e6ecb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:50.987 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisPoolFactory' of type [redis.clients.jedis.JedisPool] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:50.993 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisService' of type [cc.mrbird.febs.common.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:51.089 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:51.097 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisPlusConfig' of type [cc.mrbird.febs.common.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$31a111dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:51.102 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:51.109 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$1de22268] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:51.120 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:51.122 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:51.126 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-检测到并开启了p6spy
+2019-04-11 09:21:51.138 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Starting...
+2019-04-11 09:21:52.303 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Start completed.
+2019-04-11 09:21:52.304 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - 初始共加载 1 个数据源
+2019-04-11 09:21:52.304 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-加载 primary 成功
+2019-04-11 09:21:52.304 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - 当前的默认数据源是单数据源，数据源名为 primary
+2019-04-11 09:21:52.304 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:52.327 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:52.342 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:54.911 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:54.918 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:54.923 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:54.929 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [com.sun.proxy.$Proxy103] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:54.962 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:54.964 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [com.sun.proxy.$Proxy105] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:54.972 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:54.973 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [com.sun.proxy.$Proxy106] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:54.974 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleService' of type [cc.mrbird.febs.system.service.impl.UserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.035 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuService' of type [cc.mrbird.febs.system.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.061 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleService' of type [cc.mrbird.febs.system.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.091 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.092 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [com.sun.proxy.$Proxy110] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.095 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuService' of type [cc.mrbird.febs.system.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.121 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.122 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy112] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.153 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.154 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [com.sun.proxy.$Proxy113] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.158 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigService' of type [cc.mrbird.febs.system.service.impl.UserConfigServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.179 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [cc.mrbird.febs.system.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.201 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$3bad355f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.206 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$edf9f778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.208 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$a910dd67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.216 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.218 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.225 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$cfdc5495] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.236 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.241 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$1db8d2ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.260 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.262 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.270 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.274 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.306 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.332 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheService' of type [cc.mrbird.febs.common.service.impl.CacheServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.339 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userManager' of type [cc.mrbird.febs.system.manager.UserManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.339 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.349 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.364 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:21:55.886 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9527 (http)
+2019-04-11 09:21:55.912 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9527"]
+2019-04-11 09:21:55.920 febs [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-11 09:21:55.920 febs [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-04-11 09:21:55.929 febs [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-04-11 09:21:55.929 febs [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-11 09:21:55.929 febs [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-11 09:21:57.055 febs [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-04-11 09:21:57.288 febs [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-04-11 09:21:57.288 febs [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 13536 ms
+2019-04-11 09:21:58.220 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-11 09:21:58.220 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-04-11 09:21:58.220 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-11 09:21:58.220 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+2019-04-11 09:21:58.220 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-11 09:21:58.220 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2019-04-11 09:21:58.221 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2019-04-11 09:21:58.221 febs [main] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2019-04-11 09:21:59.455 febs [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2019-04-11 09:22:00.690 febs [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-04-11 09:22:00.753 febs [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-11 09:22:00.864 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9527"]
+2019-04-11 09:22:00.880 febs [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-04-11 09:22:00.889 febs [scheduling-1] INFO  cc.mrbird.febs.common.task.CacheTask - delete expired user
+2019-04-11 09:22:00.912 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9527 (http) with context path ''
+2019-04-11 09:22:00.915 febs [main] INFO  cc.mrbird.febs.FebsApplication - Started FebsApplication in 18.198 seconds (JVM running for 22.618)
+2019-04-11 09:22:00.929 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - Redis连接中 ······
+2019-04-11 09:22:00.942 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - 缓存初始化 ······
+2019-04-11 09:22:00.942 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - 缓存用户数据 ······
+2019-04-11 09:22:01.040 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 3 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user;
+2019-04-11 09:22:01.094 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'mrbird';
+2019-04-11 09:22:01.201 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 6 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird';
+2019-04-11 09:22:01.219 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 6 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'mrbird' and m.perms is not null and m.perms <> '';
+2019-04-11 09:22:01.236 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 3 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='1';
+2019-04-11 09:22:01.241 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'scott';
+2019-04-11 09:22:01.244 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'scott';
+2019-04-11 09:22:01.248 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'scott' and m.perms is not null and m.perms <> '';
+2019-04-11 09:22:01.253 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='2';
+2019-04-11 09:22:01.273 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'jack';
+2019-04-11 09:22:01.277 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 1 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'jack';
+2019-04-11 09:22:01.281 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'jack' and m.perms is not null and m.perms <> '';
+2019-04-11 09:22:01.284 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='12';
+2019-04-11 09:22:01.288 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'liuqiang';
+2019-04-11 09:22:01.291 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'liuqiang';
+2019-04-11 09:22:01.294 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 0 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'liuqiang' and m.perms is not null and m.perms <> '';
+2019-04-11 09:22:01.297 febs [main] INFO  p6spy - 2019-04-11 09:22:01 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='15';
+2019-04-11 09:22:01.299 febs [main] INFO  c.m.f.common.runner.StartedUpRunner -  __    ___   _      ___   _     ____ _____  ____ 
+2019-04-11 09:22:01.300 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2019-04-11 09:22:01.300 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2019-04-11 09:22:01.300 febs [main] INFO  c.m.f.common.runner.StartedUpRunner -                                                       
+2019-04-11 09:22:01.300 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - FEBS 启动完毕，时间：2019-04-11T09:22:01.300
+2019-04-11 09:22:02.343 febs [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-11 09:22:02.343 febs [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-11 09:22:02.358 febs [RMI TCP Connection(4)-127.0.0.1] INFO  p6spy - 2019-04-11 09:22:02 | 耗时 0 ms | SQL 语句：
+/* ping */ SELECT 1;
+2019-04-11 09:22:02.362 febs [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2019-04-11 09:23:58.575 febs [http-nio-9527-exec-6] INFO  c.m.febs.common.aspect.LimitAspect - IP:127.0.0.1 第 1 次访问key为 [limit_login127.0.0.1]，描述为 [登录接口] 的接口
+2019-04-11 09:23:58.809 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 09:23:58 | 耗时 2 ms | SQL 语句：
+UPDATE t_user SET last_login_time='2019-04-11T09:23:58.793+0800' WHERE username = 'mrbird';
+2019-04-11 09:23:58.812 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 09:23:58 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'mrbird';
+2019-04-11 09:23:59.619 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 09:23:59 | 耗时 8 ms | SQL 语句：
+INSERT INTO t_login_log ( username, login_time, location, ip ) VALUES ( 'mrbird', '2019-04-11T09:23:58.892+0800', '', '127.0.0.1' );
+2019-04-11 09:24:00.499 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:24:00.536 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 09:24:00 | 耗时 2 ms | SQL 语句：
+select m.* from t_menu m where m.type <> 1 and m.MENU_ID in (select distinct rm.menu_id from t_role_menu rm left join t_role r on (rm.role_id = r.role_id) left join t_user_role ur on (ur.role_id = r.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird') order by m.order_num;
+2019-04-11 09:24:01.106 febs [http-nio-9527-exec-1] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:24:01.112 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:24:01.901 febs [http-nio-9527-exec-1] INFO  p6spy - 2019-04-11 09:24:01 | 耗时 10 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 09:24:01.909 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 09:24:01 | 耗时 18 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 GROUP BY u.name ) TOTAL;
+2019-04-11 09:24:01.910 febs [http-nio-9527-exec-1] INFO  p6spy - 2019-04-11 09:24:01 | 耗时 1 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 09:24:01.918 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 09:24:01 | 耗时 7 ms | SQL 语句：
+SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 group by u.name ORDER BY id ASC LIMIT 0,10;
+2019-04-11 09:24:07.869 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:24:07.892 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 09:24:07 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 09:24:07.894 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 09:24:07 | 耗时 1 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 09:34:16.711 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:35:30.414 febs [main] INFO  cc.mrbird.febs.FebsApplication - Starting FebsApplication on DESKTOP-L5UH5E4 with PID 16872 (D:\demo\vue\FEBS-Vue\backend\target\classes started by volga in D:\demo\vue\FEBS-Vue\backend)
+2019-04-11 09:35:30.417 febs [main] INFO  cc.mrbird.febs.FebsApplication - No active profile set, falling back to default profiles: default
+2019-04-11 09:35:31.736 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-11 09:35:31.738 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-11 09:35:31.853 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 97ms. Found 0 repository interfaces.
+2019-04-11 09:35:32.355 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncExecutorPoolConfig' of type [cc.mrbird.febs.common.config.AsyncExecutorPoolConfig$$EnhancerBySpringCGLIB$$2d42d91d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.494 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.622 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$79224c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.632 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.635 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.645 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9e03b3f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.663 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$983b599] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.796 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [cc.mrbird.febs.common.config.RedisConfig$$EnhancerBySpringCGLIB$$2486ced] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.817 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisPoolFactory' of type [redis.clients.jedis.JedisPool] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.822 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisService' of type [cc.mrbird.febs.common.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.893 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.901 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisPlusConfig' of type [cc.mrbird.febs.common.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$ef8b0fff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.905 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.912 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$dbcc208a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.921 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.922 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:32.925 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-检测到并开启了p6spy
+2019-04-11 09:35:32.933 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Starting...
+2019-04-11 09:35:33.136 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Start completed.
+2019-04-11 09:35:33.136 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - 初始共加载 1 个数据源
+2019-04-11 09:35:33.136 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-加载 primary 成功
+2019-04-11 09:35:33.136 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - 当前的默认数据源是单数据源，数据源名为 primary
+2019-04-11 09:35:33.136 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:33.149 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:33.157 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.566 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.574 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.577 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.582 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [com.sun.proxy.$Proxy103] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.609 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.611 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [com.sun.proxy.$Proxy105] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.619 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.620 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [com.sun.proxy.$Proxy106] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.621 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleService' of type [cc.mrbird.febs.system.service.impl.UserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.665 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuService' of type [cc.mrbird.febs.system.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.694 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleService' of type [cc.mrbird.febs.system.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.721 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.723 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [com.sun.proxy.$Proxy110] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.725 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuService' of type [cc.mrbird.febs.system.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.752 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.753 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy112] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.789 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.790 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [com.sun.proxy.$Proxy113] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.793 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigService' of type [cc.mrbird.febs.system.service.impl.UserConfigServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.816 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [cc.mrbird.febs.system.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.837 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$f9973381] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.842 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$abe3f59a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.844 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$66fadb89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.852 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.855 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.860 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$8dc652b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.867 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.869 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$dba2d110] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.879 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.881 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.885 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.890 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.912 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.928 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheService' of type [cc.mrbird.febs.common.service.impl.CacheServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.932 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userManager' of type [cc.mrbird.febs.system.manager.UserManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.933 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.941 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:34.954 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-11 09:35:35.326 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9527 (http)
+2019-04-11 09:35:35.342 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9527"]
+2019-04-11 09:35:35.351 febs [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-04-11 09:35:35.351 febs [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-04-11 09:35:35.359 febs [main] INFO  o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2019-04-11 09:35:35.360 febs [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-04-11 09:35:35.360 febs [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-04-11 09:35:36.424 febs [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2019-04-11 09:35:36.606 febs [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-04-11 09:35:36.607 febs [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6151 ms
+2019-04-11 09:35:37.160 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-11 09:35:37.161 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-04-11 09:35:37.161 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-11 09:35:37.161 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+2019-04-11 09:35:37.161 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-11 09:35:37.161 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2019-04-11 09:35:37.161 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2019-04-11 09:35:37.161 febs [main] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2019-04-11 09:35:38.443 febs [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2019-04-11 09:35:39.510 febs [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-04-11 09:35:39.571 febs [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-11 09:35:39.688 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9527"]
+2019-04-11 09:35:39.705 febs [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-04-11 09:35:39.711 febs [scheduling-1] INFO  cc.mrbird.febs.common.task.CacheTask - delete expired user
+2019-04-11 09:35:39.730 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9527 (http) with context path ''
+2019-04-11 09:35:39.734 febs [main] INFO  cc.mrbird.febs.FebsApplication - Started FebsApplication in 11.24 seconds (JVM running for 13.59)
+2019-04-11 09:35:39.746 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - Redis连接中 ······
+2019-04-11 09:35:39.747 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - 缓存初始化 ······
+2019-04-11 09:35:39.748 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - 缓存用户数据 ······
+2019-04-11 09:35:39.833 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user;
+2019-04-11 09:35:39.871 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'mrbird';
+2019-04-11 09:35:39.938 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 1 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird';
+2019-04-11 09:35:39.950 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'mrbird' and m.perms is not null and m.perms <> '';
+2019-04-11 09:35:39.965 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='1';
+2019-04-11 09:35:39.970 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'scott';
+2019-04-11 09:35:39.972 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'scott';
+2019-04-11 09:35:39.977 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'scott' and m.perms is not null and m.perms <> '';
+2019-04-11 09:35:39.981 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='2';
+2019-04-11 09:35:39.984 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'jack';
+2019-04-11 09:35:39.988 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'jack';
+2019-04-11 09:35:39.991 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'jack' and m.perms is not null and m.perms <> '';
+2019-04-11 09:35:39.995 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='12';
+2019-04-11 09:35:39.998 febs [main] INFO  p6spy - 2019-04-11 09:35:39 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'liuqiang';
+2019-04-11 09:35:40.003 febs [main] INFO  p6spy - 2019-04-11 09:35:40 | 耗时 1 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'liuqiang';
+2019-04-11 09:35:40.005 febs [main] INFO  p6spy - 2019-04-11 09:35:40 | 耗时 0 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'liuqiang' and m.perms is not null and m.perms <> '';
+2019-04-11 09:35:40.009 febs [main] INFO  p6spy - 2019-04-11 09:35:40 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='15';
+2019-04-11 09:35:40.011 febs [main] INFO  c.m.f.common.runner.StartedUpRunner -  __    ___   _      ___   _     ____ _____  ____ 
+2019-04-11 09:35:40.016 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2019-04-11 09:35:40.016 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2019-04-11 09:35:40.016 febs [main] INFO  c.m.f.common.runner.StartedUpRunner -                                                       
+2019-04-11 09:35:40.016 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - FEBS 启动完毕，时间：2019-04-11T09:35:40.016
+2019-04-11 09:35:40.796 febs [RMI TCP Connection(5)-127.0.0.1] INFO  p6spy - 2019-04-11 09:35:40 | 耗时 0 ms | SQL 语句：
+/* ping */ SELECT 1;
+2019-04-11 09:35:40.880 febs [RMI TCP Connection(8)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-11 09:35:40.880 febs [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-04-11 09:35:40.900 febs [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+2019-04-11 09:37:54.898 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:37:55.068 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 09:37:55 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_company ( company_name, company_address, finance, scale, nature, info, tag1, tag2, tag3, create_time ) VALUES ( '盛大', '上海', 'OIP', '0-50', 'IT', '很棒', '绩效奖金', '五险一金', '带薪年假', '2019-04-11T09:37:55.060+0800' );
+2019-04-11 09:37:55.769 febs [asyncTaskExecutor-1] INFO  p6spy - 2019-04-11 09:37:55 | 耗时 42 ms | SQL 语句：
+INSERT INTO t_log ( username, operation, time, method, params, ip, create_time, location ) VALUES ( 'mrbird', '新增部门', 86, 'cc.mrbird.febs.system.controller.CompanyController.addCompany()', ' company: "Company(companyId=10, companyName=盛大, avatar=null, companyAddress=上海, finance=OIP, scale=0-50, nature=IT, info=很棒, tag1=绩效奖金, tag2=五险一金, tag3=带薪年假, createTime=Thu Apr 11 09:37:55 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)"', '127.0.0.1', '2019-04-11T09:37:55.185+0800', '' );
+2019-04-11 09:38:09.062 febs [http-nio-9527-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:38:09.116 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 09:38:09 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 09:38:09.122 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 09:38:09 | 耗时 0 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 09:38:09.230 febs [http-nio-9527-exec-5] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:38:09.237 febs [http-nio-9527-exec-5] INFO  p6spy - 2019-04-11 09:38:09 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 09:38:09.240 febs [http-nio-9527-exec-5] INFO  p6spy - 2019-04-11 09:38:09 | 耗时 1 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 09:38:18.526 febs [http-nio-9527-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:38:18.557 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 09:38:18 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 09:38:18.559 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 09:38:18 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 09:55:41.215 febs [http-nio-9527-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:55:41.270 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 09:55:41 | 耗时 15 ms | SQL 语句：
+INSERT INTO t_project ( project_name, project_code, start_time, plan_finish_time, project_status, priority_level, customer_manager, business_person, project_charge, project_counselor, company_contact, search_person, company_payer, report_object, subordinate_position, work_address, number, trade, suitable_function, language_require, sex_require, position_level, position_sort, age_require, bonus, welfare, progress, user_id, create_time ) VALUES ( '人才预备', 'A205', '2019/04/11', '2019/04/21', '0', '优先', '张三', '王二', '李四', '李玩', '赵四', '刘张', '赵四', '张三', '职位', '上海', '10', 'IT', 'IT', '四级', '2', '经理', '经理', '20', '10', '五险一金', '无', 1, '2019-04-11T09:55:41.246+0800' );
+2019-04-11 09:55:42.225 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:55:42.225 febs [asyncTaskExecutor-2] INFO  p6spy - 2019-04-11 09:55:42 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log ( username, operation, time, method, params, ip, create_time, location ) VALUES ( 'mrbird', '新增职位', 87, 'cc.mrbird.febs.project.controller.ProjectController.addProject()', ' project: "Project(projectId=null, projectName=人才预备, projectCode=A205, startTime=2019/04/11, planFinishTime=2019/04/21, projectStatus=0, priorityLevel=优先, companyName=null, gatherStatus=null, customerManager=张三, businessPerson=王二, projectCharge=李四, projectCounselor=李玩, companyContact=赵四, searchPerson=刘张, companyPayer=赵四, companyInfo=null, reportObject=张三, subordinatePosition=职位, workAddress=上海, number=10, trade=IT, suitableFunction=IT, languageRequire=四级, sexRequire=2, positionLevel=经理, positionSort=经理, ageRequire=20, positionInfo=null, positionReason=null, salaryRange=null, bonus=10, welfare=五险一金, progress=无, executionAnalyze=null, userId=1, createTime=Thu Apr 11 09:55:41 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)"', '127.0.0.1', '2019-04-11T09:55:41.336+0800', '' );
+2019-04-11 09:55:42.236 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 09:55:42 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 09:55:42.240 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 09:55:42 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 09:55:44.078 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:55:44.084 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 09:55:44 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 09:55:44.088 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 09:55:44 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 09:56:44.352 febs [http-nio-9527-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:56:44.362 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 09:56:44 | 耗时 2 ms | SQL 语句：
+INSERT INTO t_project ( project_code, start_time, plan_finish_time, project_status, sex_require, user_id, create_time ) VALUES ( 'asd', '2019/04/11', '2019/04/21', '2', '0', 1, '2019-04-11T09:56:44.357+0800' );
+2019-04-11 09:56:45.124 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:56:45.132 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 09:56:45 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 09:56:45.135 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 09:56:45 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 09:56:45.658 febs [asyncTaskExecutor-3] INFO  p6spy - 2019-04-11 09:56:45 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log ( username, operation, time, method, params, ip, create_time, location ) VALUES ( 'mrbird', '新增职位', 13, 'cc.mrbird.febs.project.controller.ProjectController.addProject()', ' project: "Project(projectId=null, projectName=null, projectCode=asd, startTime=2019/04/11, planFinishTime=2019/04/21, projectStatus=2, priorityLevel=null, companyName=null, gatherStatus=null, customerManager=null, businessPerson=null, projectCharge=null, projectCounselor=null, companyContact=null, searchPerson=null, companyPayer=null, companyInfo=null, reportObject=null, subordinatePosition=null, workAddress=null, number=null, trade=null, suitableFunction=null, languageRequire=null, sexRequire=0, positionLevel=null, positionSort=null, ageRequire=null, positionInfo=null, positionReason=null, salaryRange=null, bonus=null, welfare=null, progress=null, executionAnalyze=null, userId=1, createTime=Thu Apr 11 09:56:44 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)"', '127.0.0.1', '2019-04-11T09:56:44.374+0800', '' );
+2019-04-11 09:56:51.751 febs [http-nio-9527-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:56:51.758 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 09:56:51 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 09:56:51.760 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 09:56:51 | 耗时 0 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 09:59:00.203 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:59:00.214 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 09:59:00 | 耗时 3 ms | SQL 语句：
+INSERT INTO t_project ( project_name, start_time, plan_finish_time, project_status, sex_require, user_id, create_time ) VALUES ( 'asdds数据库', '', '', '0', '1', 1, '2019-04-11T09:59:00.208+0800' );
+2019-04-11 09:59:00.827 febs [http-nio-9527-exec-5] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 09:59:00.828 febs [asyncTaskExecutor-4] INFO  p6spy - 2019-04-11 09:59:00 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log ( username, operation, time, method, params, ip, create_time, location ) VALUES ( 'mrbird', '新增职位', 19, 'cc.mrbird.febs.project.controller.ProjectController.addProject()', ' project: "Project(projectId=null, projectName=asdds数据库, projectCode=null, startTime=, planFinishTime=, projectStatus=0, priorityLevel=null, companyName=null, gatherStatus=null, customerManager=null, businessPerson=null, projectCharge=null, projectCounselor=null, companyContact=null, searchPerson=null, companyPayer=null, companyInfo=null, reportObject=null, subordinatePosition=null, workAddress=null, number=null, trade=null, suitableFunction=null, languageRequire=null, sexRequire=1, positionLevel=null, positionSort=null, ageRequire=null, positionInfo=null, positionReason=null, salaryRange=null, bonus=null, welfare=null, progress=null, executionAnalyze=null, userId=1, createTime=Thu Apr 11 09:59:00 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)"', '127.0.0.1', '2019-04-11T09:59:00.228+0800', '' );
+2019-04-11 09:59:00.834 febs [http-nio-9527-exec-5] INFO  p6spy - 2019-04-11 09:59:00 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 09:59:00.836 febs [http-nio-9527-exec-5] INFO  p6spy - 2019-04-11 09:59:00 | 耗时 0 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:02:02.262 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:02:09.903 febs [http-nio-9527-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:02:09.914 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 10:02:09 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_project ( project_name, project_code, start_time, plan_finish_time, project_status, priority_level, customer_manager, business_person, project_charge, project_counselor, company_contact, search_person, company_payer, report_object, subordinate_position, work_address, number, trade, suitable_function, language_require, sex_require, position_level, position_sort, age_require, bonus, welfare, progress, user_id, create_time ) VALUES ( '项目名称', 'ADS', '2019/04/11', '2019/04/12', '0', '经理', '张三', '张三', '张三', '张三', '张三', '王二', '王二', '王二', 'IT', '上海', '10', 'IT', '经理', '四级', '0', '经理', '经理', '20', '10', '五险一金', '无', 1, '2019-04-11T10:02:09.907+0800' );
+2019-04-11 10:02:10.330 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:02:10.338 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 10:02:10 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:02:10.341 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 10:02:10 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:02:10.903 febs [asyncTaskExecutor-5] INFO  p6spy - 2019-04-11 10:02:10 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log ( username, operation, time, method, params, ip, create_time, location ) VALUES ( 'mrbird', '新增职位', 14, 'cc.mrbird.febs.project.controller.ProjectController.addProject()', ' project: "Project(projectId=null, projectName=项目名称, projectCode=ADS, startTime=2019/04/11, planFinishTime=2019/04/12, projectStatus=0, priorityLevel=经理, companyName=null, gatherStatus=null, customerManager=张三, businessPerson=张三, projectCharge=张三, projectCounselor=张三, companyContact=张三, searchPerson=王二, companyPayer=王二, companyInfo=null, reportObject=王二, subordinatePosition=IT, workAddress=上海, number=10, trade=IT, suitableFunction=经理, languageRequire=四级, sexRequire=0, positionLevel=经理, positionSort=经理, ageRequire=20, positionInfo=null, positionReason=null, salaryRange=null, bonus=10, welfare=五险一金, progress=无, executionAnalyze=null, userId=1, createTime=Thu Apr 11 10:02:09 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)"', '127.0.0.1', '2019-04-11T10:02:09.922+0800', '' );
+2019-04-11 10:02:12.487 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:02:12.495 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 10:02:12 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:02:12.498 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 10:02:12 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:10:07.836 febs [http-nio-9527-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:10:07.855 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 10:10:07 | 耗时 8 ms | SQL 语句：
+INSERT INTO t_project ( project_name, project_code, start_time, plan_finish_time, project_status, priority_level, company_name, customer_manager, business_person, project_charge, project_counselor, company_contact, search_person, company_payer, report_object, subordinate_position, work_address, number, trade, suitable_function, language_require, sex_require, position_level, position_sort, age_require, bonus, welfare, progress, user_id, create_time ) VALUES ( '项目名称', 'ADCS', '2019/04/11', '2019/04/25', '0', '有限', '上海汉得信息股份有限公司', '张三', '张三', '张三', '张三', '张三', '张三', '张三', '张', '经理', '上海', '10', 'IT经理', '经理', '四级', '0', '经理', '经理', '20', '10', '五险一金', '无', 1, '2019-04-11T10:10:07.844+0800' );
+2019-04-11 10:10:08.464 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:10:08.468 febs [asyncTaskExecutor-1] INFO  p6spy - 2019-04-11 10:10:08 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log ( username, operation, time, method, params, ip, create_time, location ) VALUES ( 'mrbird', '新增职位', 18, 'cc.mrbird.febs.project.controller.ProjectController.addProject()', ' project: "Project(projectId=null, projectName=项目名称, projectCode=ADCS, startTime=2019/04/11, planFinishTime=2019/04/25, projectStatus=0, priorityLevel=有限, companyName=上海汉得信息股份有限公司, gatherStatus=null, customerManager=张三, businessPerson=张三, projectCharge=张三, projectCounselor=张三, companyContact=张三, searchPerson=张三, companyPayer=张三, companyInfo=null, reportObject=张, subordinatePosition=经理, workAddress=上海, number=10, trade=IT经理, suitableFunction=经理, languageRequire=四级, sexRequire=0, positionLevel=经理, positionSort=经理, ageRequire=20, positionInfo=null, positionReason=null, salaryRange=null, bonus=10, welfare=五险一金, progress=无, executionAnalyze=null, userId=1, createTime=Thu Apr 11 10:10:07 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)"', '127.0.0.1', '2019-04-11T10:10:07.860+0800', '' );
+2019-04-11 10:10:08.472 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 10:10:08 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:10:08.475 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 10:10:08 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:10:10.214 febs [http-nio-9527-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:10:10.222 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 10:10:10 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:10:10.225 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 10:10:10 | 耗时 0 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:18:02.222 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:18:02.231 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 10:18:02 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_project ( project_name, project_code, start_time, plan_finish_time, project_status, priority_level, company_name, gather_status, customer_manager, business_person, project_charge, project_counselor, company_contact, search_person, company_payer, report_object, subordinate_position, work_address, number, trade, suitable_function, language_require, sex_require, position_level, position_sort, age_require, bonus, welfare, progress, user_id, create_time ) VALUES ( '项目名称', 'ADS', '2019/04/11', '2019/04/19', '0', '优先', '上海汉得信息股份有限公司', '0', '张三', '张三', '张三', '张三', '张三', '张三', '张三', '张三', '经理', '上海', '10', 'IT', '经理 ', '无', '0', '经理', '经理', '20', '10', '无', '无', 1, '2019-04-11T10:18:02.228+0800' );
+2019-04-11 10:18:03.163 febs [http-nio-9527-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:18:03.164 febs [asyncTaskExecutor-2] INFO  p6spy - 2019-04-11 10:18:03 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log ( username, operation, time, method, params, ip, create_time, location ) VALUES ( 'mrbird', '新增职位', 14, 'cc.mrbird.febs.project.controller.ProjectController.addProject()', ' project: "Project(projectId=null, projectName=项目名称, projectCode=ADS, startTime=2019/04/11, planFinishTime=2019/04/19, projectStatus=0, priorityLevel=优先, companyName=上海汉得信息股份有限公司, gatherStatus=0, customerManager=张三, businessPerson=张三, projectCharge=张三, projectCounselor=张三, companyContact=张三, searchPerson=张三, companyPayer=张三, companyInfo=null, reportObject=张三, subordinatePosition=经理, workAddress=上海, number=10, trade=IT, suitableFunction=经理 , languageRequire=无, sexRequire=0, positionLevel=经理, positionSort=经理, ageRequire=20, positionInfo=null, positionReason=null, salaryRange=null, bonus=10, welfare=无, progress=无, executionAnalyze=null, userId=1, createTime=Thu Apr 11 10:18:02 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)"', '127.0.0.1', '2019-04-11T10:18:02.243+0800', '' );
+2019-04-11 10:18:03.170 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 10:18:03 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:18:03.172 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 10:18:03 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:21:16.613 febs [http-nio-9527-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:21:16.623 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 10:21:16 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_project ( project_name, project_code, start_time, plan_finish_time, project_status, priority_level, company_name, gather_status, customer_manager, business_person, project_charge, project_counselor, company_contact, search_person, company_payer, report_object, subordinate_position, work_address, number, trade, suitable_function, language_require, sex_require, position_level, position_sort, age_require, bonus, welfare, progress, user_id, create_time ) VALUES ( '项目经理', 'ADS', '2019/04/11', '2019/04/19', '0', '优先', '上海汉得信息股份有限公司', '0', '张三', '张三', '张三', '张三', '张三', '张三', '张三', '张三', '张', '张', '10', 'IT', '经理', '无', '0', '经理', 'IT', '20', '10', '五险一金', '无', 1, '2019-04-11T10:21:16.618+0800' );
+2019-04-11 10:21:17.256 febs [http-nio-9527-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:21:17.261 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 10:21:17 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:21:17.263 febs [asyncTaskExecutor-3] INFO  p6spy - 2019-04-11 10:21:17 | 耗时 6 ms | SQL 语句：
+INSERT INTO t_log ( username, operation, time, method, params, ip, create_time, location ) VALUES ( 'mrbird', '新增职位', 32, 'cc.mrbird.febs.project.controller.ProjectController.addProject()', ' project: "Project(projectId=null, projectName=项目经理, projectCode=ADS, startTime=2019/04/11, planFinishTime=2019/04/19, projectStatus=0, priorityLevel=优先, companyName=上海汉得信息股份有限公司, gatherStatus=0, customerManager=张三, businessPerson=张三, projectCharge=张三, projectCounselor=张三, companyContact=张三, searchPerson=张三, companyPayer=张三, companyInfo=null, reportObject=张三, subordinatePosition=张, workAddress=张, number=10, trade=IT, suitableFunction=经理, languageRequire=无, sexRequire=0, positionLevel=经理, positionSort=IT, ageRequire=20, positionInfo=null, positionReason=null, salaryRange=null, bonus=10, welfare=五险一金, progress=无, executionAnalyze=null, userId=1, createTime=Thu Apr 11 10:21:16 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)"', '127.0.0.1', '2019-04-11T10:21:16.650+0800', '' );
+2019-04-11 10:21:17.263 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 10:21:17 | 耗时 0 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:24:34.860 febs [http-nio-9527-exec-4] INFO  c.m.febs.common.aspect.LimitAspect - IP:127.0.0.1 第 1 次访问key为 [limit_login127.0.0.1]，描述为 [登录接口] 的接口
+2019-04-11 10:24:34.883 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 10:24:34 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET last_login_time='2019-04-11T10:24:34.875+0800' WHERE username = 'mrbird';
+2019-04-11 10:24:34.886 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 10:24:34 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'mrbird';
+2019-04-11 10:24:35.699 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 10:24:35 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_login_log ( username, login_time, location, ip ) VALUES ( 'mrbird', '2019-04-11T10:24:34.938+0800', '', '127.0.0.1' );
+2019-04-11 10:24:36.334 febs [http-nio-9527-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:24:36.352 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 10:24:36 | 耗时 3 ms | SQL 语句：
+select m.* from t_menu m where m.type <> 1 and m.MENU_ID in (select distinct rm.menu_id from t_role_menu rm left join t_role r on (rm.role_id = r.role_id) left join t_user_role ur on (ur.role_id = r.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird') order by m.order_num;
+2019-04-11 10:24:36.782 febs [http-nio-9527-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:24:36.783 febs [http-nio-9527-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:24:36.791 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 10:24:36 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 10:24:36.793 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 10:24:36 | 耗时 1 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 10:24:36.817 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 10:24:36 | 耗时 9 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 GROUP BY u.name ) TOTAL;
+2019-04-11 10:24:36.827 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 10:24:36 | 耗时 8 ms | SQL 语句：
+SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 group by u.name ORDER BY id ASC LIMIT 0,10;
+2019-04-11 10:25:34.715 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:25:34.723 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 10:25:34 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:25:34.726 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 10:25:34 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:27:15.101 febs [http-nio-9527-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:27:15.110 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 10:27:15 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_project ( project_name, project_code, start_time, plan_finish_time, project_status, priority_level, company_name, gather_status, customer_manager, business_person, project_charge, project_counselor, company_contact, search_person, company_payer, company_info, report_object, subordinate_position, work_address, number, trade, suitable_function, language_require, position_level, position_sort, age_require, position_info, position_reason, bonus, welfare, progress, execution_analyze, user_id, create_time ) VALUES ( '项目经理', 'ADS', '2019/04/11', '2019/04/11', '0', '优先', '上海汉得信息股份有限公司', '0', '张三', '张三', '张三', '张三', '张三', '张三', '张三', '无', '张三', '经理', '上海', '10', 'IT', '经理', '无', '经理', '经理', '20', '无', '无', '10', '无', '无', '无', 1, '2019-04-11T10:27:15.107+0800' );
+2019-04-11 10:27:16.014 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:27:16.015 febs [asyncTaskExecutor-4] INFO  p6spy - 2019-04-11 10:27:16 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log ( username, operation, time, method, params, ip, create_time, location ) VALUES ( 'mrbird', '新增职位', 15, 'cc.mrbird.febs.project.controller.ProjectController.addProject()', ' project: "Project(projectId=null, projectName=项目经理, projectCode=ADS, startTime=2019/04/11, planFinishTime=2019/04/11, projectStatus=0, priorityLevel=优先, companyName=上海汉得信息股份有限公司, gatherStatus=0, customerManager=张三, businessPerson=张三, projectCharge=张三, projectCounselor=张三, companyContact=张三, searchPerson=张三, companyPayer=张三, companyInfo=无, reportObject=张三, subordinatePosition=经理, workAddress=上海, number=10, trade=IT, suitableFunction=经理, languageRequire=无, sexRequire=null, positionLevel=经理, positionSort=经理, ageRequire=20, positionInfo=无, positionReason=无, salaryRange=null, bonus=10, welfare=无, progress=无, executionAnalyze=无, userId=1, createTime=Thu Apr 11 10:27:15 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)"', '127.0.0.1', '2019-04-11T10:27:15.122+0800', '' );
+2019-04-11 10:27:16.020 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 10:27:16 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:27:16.022 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 10:27:16 | 耗时 0 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:30:48.027 febs [http-nio-9527-exec-1] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:30:48.036 febs [http-nio-9527-exec-1] INFO  p6spy - 2019-04-11 10:30:48 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_project ( project_name, project_code, start_time, plan_finish_time, project_status, priority_level, company_name, gather_status, customer_manager, business_person, project_charge, project_counselor, company_contact, search_person, company_payer, company_info, report_object, subordinate_position, work_address, number, trade, suitable_function, language_require, sex_require, position_level, position_sort, age_require, position_info, position_reason, salary_range, bonus, welfare, progress, execution_analyze, user_id, create_time ) VALUES ( '项目经理', 'ADS', '2019/04/11', '2019/04/18', '0', '优先', '上海汉得信息股份有限公司', '0', '张三', '张三', '张三', '张三', '张三', '张三', '张三', '无', '张三', '经理', '上个', '10', 'IT', '经理', '无', '0', '经理', '经理', '20', '无', '无', '10-20', '10', '无', '无', '无', 1, '2019-04-11T10:30:48.032+0800' );
+2019-04-11 10:30:48.126 febs [http-nio-9527-exec-1] INFO  c.m.f.p.controller.ProjectController - 新增职位：Project(projectId=2, projectName=项目经理, projectCode=ADS, startTime=2019/04/11, planFinishTime=2019/04/18, projectStatus=0, priorityLevel=优先, companyName=上海汉得信息股份有限公司, gatherStatus=0, customerManager=张三, businessPerson=张三, projectCharge=张三, projectCounselor=张三, companyContact=张三, searchPerson=张三, companyPayer=张三, companyInfo=无, reportObject=张三, subordinatePosition=经理, workAddress=上个, number=10, trade=IT, suitableFunction=经理, languageRequire=无, sexRequire=0, positionLevel=经理, positionSort=经理, ageRequire=20, positionInfo=无, positionReason=无, salaryRange=10-20, bonus=10, welfare=无, progress=无, executionAnalyze=无, userId=1, createTime=Thu Apr 11 10:30:48 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)
+2019-04-11 10:30:48.743 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:30:48.744 febs [asyncTaskExecutor-5] INFO  p6spy - 2019-04-11 10:30:48 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log ( username, operation, time, method, params, ip, create_time, location ) VALUES ( 'mrbird', '新增职位', 96, 'cc.mrbird.febs.project.controller.ProjectController.addProject()', ' project: "Project(projectId=2, projectName=项目经理, projectCode=ADS, startTime=2019/04/11, planFinishTime=2019/04/18, projectStatus=0, priorityLevel=优先, companyName=上海汉得信息股份有限公司, gatherStatus=0, customerManager=张三, businessPerson=张三, projectCharge=张三, projectCounselor=张三, companyContact=张三, searchPerson=张三, companyPayer=张三, companyInfo=无, reportObject=张三, subordinatePosition=经理, workAddress=上个, number=10, trade=IT, suitableFunction=经理, languageRequire=无, sexRequire=0, positionLevel=经理, positionSort=经理, ageRequire=20, positionInfo=无, positionReason=无, salaryRange=10-20, bonus=10, welfare=无, progress=无, executionAnalyze=无, userId=1, createTime=Thu Apr 11 10:30:48 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)"', '127.0.0.1', '2019-04-11T10:30:48.130+0800', '' );
+2019-04-11 10:30:48.748 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 10:30:48 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:30:48.751 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 10:30:48 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:32:07.589 febs [http-nio-9527-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:32:07.596 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 10:32:07 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:32:07.600 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 10:32:07 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:32:36.387 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:32:36.394 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 10:32:36 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:32:36.397 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 10:32:36 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:33:20.400 febs [http-nio-9527-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:33:20.406 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 10:33:20 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:33:20.409 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 10:33:20 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:33:24.993 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:33:24.998 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 10:33:24 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 10:33:25.000 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 10:33:25 | 耗时 0 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 10:33:30.080 febs [http-nio-9527-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:33:30.106 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 10:33:30 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_contract t WHERE 1 = 1;
+2019-04-11 10:33:30.109 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 10:33:30 | 耗时 0 ms | SQL 语句：
+select t.CONTRACT_ID, t.CONTRACT_NAME, t.CONTRACT_CODE, t.START_TIME, t.FINISH_TIME, t.MAKE_INVOICE_TIME, t.PAY_WAY, t.COMPANY_SIGNED, t.CUSTOMER_SIGNED, t.SIGNED_TIME, t.SIGNED_ADDRESS, t.STORE_ADDRESS, t.FILL_TIME, t.MONEY, t.MONEY, t.CONTRACT_INFO, t.ORDER_NUMBER, t.INFO, t.USER_ID, t.CREATE_TIME, t.MODIFY_TIME from t_contract t where 1=1 ORDER BY CONTRACT_ID ASC LIMIT 0,10;
+2019-04-11 10:35:07.739 febs [http-nio-9527-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:35:07.746 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 10:35:07 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_contract t WHERE 1 = 1;
+2019-04-11 10:35:07.749 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 10:35:07 | 耗时 1 ms | SQL 语句：
+select t.CONTRACT_ID, t.CONTRACT_NAME, t.CONTRACT_CODE, t.START_TIME, t.FINISH_TIME, t.MAKE_INVOICE_TIME, t.PAY_WAY, t.COMPANY_SIGNED, t.CUSTOMER_SIGNED, t.SIGNED_TIME, t.SIGNED_ADDRESS, t.STORE_ADDRESS, t.FILL_TIME, t.MONEY, t.MONEY, t.CONTRACT_INFO, t.ORDER_NUMBER, t.INFO, t.USER_ID, t.CREATE_TIME, t.MODIFY_TIME from t_contract t where 1=1 ORDER BY CONTRACT_ID ASC LIMIT 0,10;
+2019-04-11 10:35:17.113 febs [http-nio-9527-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:35:17.119 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 10:35:17 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_contract t WHERE 1 = 1;
+2019-04-11 10:35:17.121 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 10:35:17 | 耗时 1 ms | SQL 语句：
+select t.CONTRACT_ID, t.CONTRACT_NAME, t.CONTRACT_CODE, t.START_TIME, t.FINISH_TIME, t.MAKE_INVOICE_TIME, t.PAY_WAY, t.COMPANY_SIGNED, t.CUSTOMER_SIGNED, t.SIGNED_TIME, t.SIGNED_ADDRESS, t.STORE_ADDRESS, t.FILL_TIME, t.MONEY, t.MONEY, t.CONTRACT_INFO, t.ORDER_NUMBER, t.INFO, t.USER_ID, t.CREATE_TIME, t.MODIFY_TIME from t_contract t where 1=1 ORDER BY CONTRACT_ID ASC LIMIT 0,10;
+2019-04-11 10:35:23.869 febs [http-nio-9527-exec-1] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:35:23.875 febs [http-nio-9527-exec-1] INFO  p6spy - 2019-04-11 10:35:23 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_contract t WHERE 1 = 1;
+2019-04-11 10:35:23.877 febs [http-nio-9527-exec-1] INFO  p6spy - 2019-04-11 10:35:23 | 耗时 0 ms | SQL 语句：
+select t.CONTRACT_ID, t.CONTRACT_NAME, t.CONTRACT_CODE, t.START_TIME, t.FINISH_TIME, t.MAKE_INVOICE_TIME, t.PAY_WAY, t.COMPANY_SIGNED, t.CUSTOMER_SIGNED, t.SIGNED_TIME, t.SIGNED_ADDRESS, t.STORE_ADDRESS, t.FILL_TIME, t.MONEY, t.MONEY, t.CONTRACT_INFO, t.ORDER_NUMBER, t.INFO, t.USER_ID, t.CREATE_TIME, t.MODIFY_TIME from t_contract t where 1=1 ORDER BY CONTRACT_ID ASC LIMIT 0,10;
+2019-04-11 10:35:39.687 febs [scheduling-1] INFO  cc.mrbird.febs.common.task.CacheTask - delete expired user
+2019-04-11 10:35:56.726 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:35:56.732 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 10:35:56 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_contract t WHERE 1 = 1;
+2019-04-11 10:35:56.735 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 10:35:56 | 耗时 1 ms | SQL 语句：
+select t.CONTRACT_ID, t.CONTRACT_NAME, t.CONTRACT_CODE, t.START_TIME, t.FINISH_TIME, t.MAKE_INVOICE_TIME, t.PAY_WAY, t.COMPANY_SIGNED, t.CUSTOMER_SIGNED, t.SIGNED_TIME, t.SIGNED_ADDRESS, t.STORE_ADDRESS, t.FILL_TIME, t.MONEY, t.MONEY, t.CONTRACT_INFO, t.ORDER_NUMBER, t.INFO, t.USER_ID, t.CREATE_TIME, t.MODIFY_TIME from t_contract t where 1=1 ORDER BY CONTRACT_ID ASC LIMIT 0,10;
+2019-04-11 10:46:18.325 febs [http-nio-9527-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:46:18.333 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 10:46:18 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_contract t WHERE 1 = 1;
+2019-04-11 10:46:18.336 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 10:46:18 | 耗时 1 ms | SQL 语句：
+select t.CONTRACT_ID, t.CONTRACT_NAME, t.CONTRACT_CODE, t.START_TIME, t.FINISH_TIME, t.MAKE_INVOICE_TIME, t.PAY_WAY, t.COMPANY_SIGNED, t.CUSTOMER_SIGNED, t.SIGNED_TIME, t.SIGNED_ADDRESS, t.STORE_ADDRESS, t.FILL_TIME, t.MONEY, t.MONEY, t.CONTRACT_INFO, t.ORDER_NUMBER, t.INFO, t.USER_ID, t.CREATE_TIME, t.MODIFY_TIME from t_contract t where 1=1 ORDER BY CONTRACT_ID ASC LIMIT 0,10;
+2019-04-11 10:48:09.645 febs [http-nio-9527-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:48:09.652 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 10:48:09 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_contract t WHERE 1 = 1;
+2019-04-11 10:48:09.655 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 10:48:09 | 耗时 1 ms | SQL 语句：
+select t.CONTRACT_ID, t.CONTRACT_NAME, t.CONTRACT_CODE, t.START_TIME, t.FINISH_TIME, t.MAKE_INVOICE_TIME, t.PAY_WAY, t.COMPANY_SIGNED, t.CUSTOMER_SIGNED, t.SIGNED_TIME, t.SIGNED_ADDRESS, t.STORE_ADDRESS, t.FILL_TIME, t.MONEY, t.MONEY, t.CONTRACT_INFO, t.ORDER_NUMBER, t.INFO, t.USER_ID, t.CREATE_TIME, t.MODIFY_TIME from t_contract t where 1=1 ORDER BY CONTRACT_ID ASC LIMIT 0,10;
+2019-04-11 10:53:32.119 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:53:32.127 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 10:53:32 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 10:53:32.131 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 10:53:32 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 10:53:40.172 febs [http-nio-9527-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:53:40.180 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 10:53:40 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 10:53:40.182 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 10:53:40 | 耗时 1 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 10:57:13.794 febs [http-nio-9527-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 10:58:15.772 febs [http-nio-9527-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 11:00:16.950 febs [http-nio-9527-exec-1] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 11:00:16.969 febs [http-nio-9527-exec-1] INFO  p6spy - 2019-04-11 11:00:16 | 耗时 10 ms | SQL 语句：
+INSERT INTO t_contract ( contract_name, contract_code, start_time, finish_time, make_invoice_time, pay_way, company_signed, customer_signed, signed_time, signed_address, store_address, money, execute_status, contract_info, order_number, info, user_id, create_time ) VALUES ( '人才引荐合同', 'ADSAD', '2019-04-18T00:00:00.000+0800', '2019-04-25T00:00:00.000+0800', '2019-04-11T00:00:00.000+0800', '农业银行', '张三', '王二', '2019-04-11T00:00:00.000+0800', '上海', '上海', 100.0, '0', '人才引荐', 'ADS', 'qwe', 1, '2019-04-11T11:00:16.954+0800' );
+2019-04-11 11:00:17.003 febs [http-nio-9527-exec-1] INFO  c.m.f.c.c.ContractController - 新增职位：Contract(contractId=2, contractName=人才引荐合同, contractCode=ADSAD, startTime=Thu Apr 18 00:00:00 CST 2019, finishTime=Thu Apr 25 00:00:00 CST 2019, makeInvoiceTime=Thu Apr 11 00:00:00 CST 2019, payWay=农业银行, companySigned=张三, customerSigned=王二, signedTime=Thu Apr 11 00:00:00 CST 2019, signedAddress=上海, storeAddress=上海, fillTime=null, money=100.0, executeStatus=0, contractInfo=人才引荐, orderNumber=ADS, info=qwe, userId=1, createTime=Thu Apr 11 11:00:16 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)
+2019-04-11 11:00:17.947 febs [asyncTaskExecutor-1] INFO  p6spy - 2019-04-11 11:00:17 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log ( username, operation, time, method, params, ip, create_time, location ) VALUES ( 'mrbird', '新增职位', 51, 'cc.mrbird.febs.contract.controller.ContractController.addContract()', ' contract: "Contract(contractId=2, contractName=人才引荐合同, contractCode=ADSAD, startTime=Thu Apr 18 00:00:00 CST 2019, finishTime=Thu Apr 25 00:00:00 CST 2019, makeInvoiceTime=Thu Apr 11 00:00:00 CST 2019, payWay=农业银行, companySigned=张三, customerSigned=王二, signedTime=Thu Apr 11 00:00:00 CST 2019, signedAddress=上海, storeAddress=上海, fillTime=null, money=100.0, executeStatus=0, contractInfo=人才引荐, orderNumber=ADS, info=qwe, userId=1, createTime=Thu Apr 11 11:00:16 CST 2019, modifyTime=null, createTimeFrom=null, createTimeTo=null)"', '127.0.0.1', '2019-04-11T11:00:17.011+0800', '' );
+2019-04-11 11:00:40.629 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 11:00:40.635 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 11:00:40 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_contract t WHERE 1 = 1;
+2019-04-11 11:00:40.638 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 11:00:40 | 耗时 0 ms | SQL 语句：
+select t.CONTRACT_ID, t.CONTRACT_NAME, t.CONTRACT_CODE, t.START_TIME, t.FINISH_TIME, t.MAKE_INVOICE_TIME, t.PAY_WAY, t.COMPANY_SIGNED, t.CUSTOMER_SIGNED, t.SIGNED_TIME, t.SIGNED_ADDRESS, t.STORE_ADDRESS, t.FILL_TIME, t.MONEY, t.MONEY, t.CONTRACT_INFO, t.ORDER_NUMBER, t.INFO, t.USER_ID, t.CREATE_TIME, t.MODIFY_TIME from t_contract t where 1=1 ORDER BY CONTRACT_ID ASC LIMIT 0,10;
+2019-04-11 11:37:01.641 febs [scheduling-1] INFO  cc.mrbird.febs.common.task.CacheTask - delete expired user
+2019-04-11 13:26:32.376 febs [http-nio-9527-exec-9] INFO  c.m.febs.common.aspect.LimitAspect - IP:127.0.0.1 第 1 次访问key为 [limit_login127.0.0.1]，描述为 [登录接口] 的接口
+2019-04-11 13:26:32.386 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 13:26:32 | 耗时 2 ms | SQL 语句：
+UPDATE t_user SET last_login_time='2019-04-11T13:26:32.380+0800' WHERE username = 'mrbird';
+2019-04-11 13:26:32.390 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 13:26:32 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'mrbird';
+2019-04-11 13:26:33.056 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 13:26:33 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_login_log ( username, login_time, location, ip ) VALUES ( 'mrbird', '2019-04-11T13:26:32.466+0800', '', '127.0.0.1' );
+2019-04-11 13:26:34.100 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:26:34.111 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 13:26:34 | 耗时 2 ms | SQL 语句：
+select m.* from t_menu m where m.type <> 1 and m.MENU_ID in (select distinct rm.menu_id from t_role_menu rm left join t_role r on (rm.role_id = r.role_id) left join t_user_role ur on (ur.role_id = r.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird') order by m.order_num;
+2019-04-11 13:26:34.545 febs [http-nio-9527-exec-5] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:26:34.547 febs [http-nio-9527-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:26:34.557 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 13:26:34 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 13:26:34.559 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 13:26:34 | 耗时 0 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 13:26:34.564 febs [http-nio-9527-exec-5] INFO  p6spy - 2019-04-11 13:26:34 | 耗时 8 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 GROUP BY u.name ) TOTAL;
+2019-04-11 13:26:34.571 febs [http-nio-9527-exec-5] INFO  p6spy - 2019-04-11 13:26:34 | 耗时 6 ms | SQL 语句：
+SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 group by u.name ORDER BY id ASC LIMIT 0,10;
+2019-04-11 13:29:56.323 febs [scheduling-1] INFO  cc.mrbird.febs.common.task.CacheTask - delete expired user
+2019-04-11 13:32:14.586 febs [http-nio-9527-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:14.620 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 13:32:14 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_person t WHERE 1 = 1;
+2019-04-11 13:32:14.622 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 13:32:14 | 耗时 0 ms | SQL 语句：
+select t.PERSON_ID, t.PERSON_NAME, t.PERSON_SEX, t.PERSON_SORT, t.PERSON_LEVEL, t.COMPANY_NAME, t.BIRTHDAY, t.ACCOUNT, t.COMPUTER, t.CONTENT, t.CREATE_TIME, t.CURRENT_ADDRESS, t.CURRENT_SALARY, t.EDUCATION_BACKGROUND, t.EDUCATION_RECORD, t.HEIGHT, t.WEIGHT, t.IDENTITY_CARD, t.EMAIL, t.LANGUAGE_SKILL, t.GRADUATE_INSTITUTIONS, t.GRADUATE_TIME, t.WORK_YEARS, t.WORK_EXPERIENCE, t.WORK_PHONE, t.MAJOR, t.MARITAL_STATUS, t.MOBILE_PHONE, t.MODIFY_TIME, t.OFFICE_TERM, t.NATION, t.NATIONALITY, t.NATIVE_PLACE, t.SELF_ASSESSMENT, t.FAMILY_PHONE, t.POSITION_NAME, t.PROJECT_EXPERIENCE, t.TRAIN_RECORD, t.RELATED_SKILL, t.USER_ID, t.RESUME from t_person t where 1=1 ORDER BY person_id ASC LIMIT 0,10;
+2019-04-11 13:32:20.334 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:20.343 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 13:32:20 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_contract t WHERE 1 = 1;
+2019-04-11 13:32:20.345 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 13:32:20 | 耗时 0 ms | SQL 语句：
+select t.CONTRACT_ID, t.CONTRACT_NAME, t.CONTRACT_CODE, t.START_TIME, t.FINISH_TIME, t.MAKE_INVOICE_TIME, t.PAY_WAY, t.COMPANY_SIGNED, t.CUSTOMER_SIGNED, t.SIGNED_TIME, t.SIGNED_ADDRESS, t.STORE_ADDRESS, t.FILL_TIME, t.MONEY, t.MONEY, t.CONTRACT_INFO, t.ORDER_NUMBER, t.INFO, t.USER_ID, t.CREATE_TIME, t.MODIFY_TIME from t_contract t where 1=1 ORDER BY CONTRACT_ID ASC LIMIT 0,10;
+2019-04-11 13:32:22.313 febs [http-nio-9527-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:22.323 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 13:32:22 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 13:32:22.326 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 13:32:22 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 13:32:23.992 febs [http-nio-9527-exec-5] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:23.997 febs [http-nio-9527-exec-5] INFO  p6spy - 2019-04-11 13:32:23 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 13:32:23.999 febs [http-nio-9527-exec-5] INFO  p6spy - 2019-04-11 13:32:23 | 耗时 0 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 13:32:27.428 febs [http-nio-9527-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:27.442 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 13:32:27 | 耗时 9 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 GROUP BY u.name ) TOTAL;
+2019-04-11 13:32:27.451 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 13:32:27 | 耗时 7 ms | SQL 语句：
+SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 group by u.name ORDER BY id ASC LIMIT 0,10;
+2019-04-11 13:32:29.310 febs [http-nio-9527-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:29.321 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 13:32:29 | 耗时 6 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 GROUP BY u.name ) TOTAL;
+2019-04-11 13:32:29.328 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 13:32:29 | 耗时 6 ms | SQL 语句：
+SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 group by u.name ORDER BY id ASC LIMIT 0,10;
+2019-04-11 13:32:32.687 febs [http-nio-9527-exec-1] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:32.690 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:32.693 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:32.696 febs [http-nio-9527-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:32.704 febs [http-nio-9527-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:32.720 febs [http-nio-9527-exec-1] INFO  p6spy - 2019-04-11 13:32:32 | 耗时 6 ms | SQL 语句：
+SELECT ID,user_id,photo,profession,address FROM sys_resume WHERE user_id = 1;
+2019-04-11 13:32:32.728 febs [http-nio-9527-exec-5] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:32.750 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 13:32:32 | 耗时 39 ms | SQL 语句：
+SELECT u.id, u.account, u.resume_id, u.status FROM resume_data u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 13:32:32.757 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 13:32:32 | 耗时 33 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.content FROM resume_information u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 13:32:32.761 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:32.762 febs [http-nio-9527-exec-5] INFO  p6spy - 2019-04-11 13:32:32 | 耗时 9 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.grade, u.language, u.proficiency FROM resume_language u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 13:32:32.778 febs [http-nio-9527-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:32.778 febs [http-nio-9527-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:32.791 febs [http-nio-9527-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:32:32.805 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 13:32:32 | 耗时 72 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.content FROM resume_assessment u LEFT JOIN sys_resume sr on u.id = u.resume_id where sr.user_id = 1;
+2019-04-11 13:32:32.806 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 13:32:32 | 耗时 10 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.address, u.annual_salary, u.current_salary, u.functional, u.trade FROM resume_intention u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 13:32:32.819 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 13:32:32 | 耗时 21 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.company_address, u.company_intro, u.company_name, u.company_nature, u.company_scale, u.company_trade, u.department, u.employment_period_from, u.employment_period_to, u.job_performance, u.monthly_pay, u.monthly_pay_number, u.under_number FROM resume_experience u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 13:32:32.820 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 13:32:32 | 耗时 78 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.education, u.major_name, u.recruitment_flag, u.school_name, u.time_end, u.time_start FROM resume_education u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 13:32:32.828 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 13:32:32 | 耗时 15 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.label_name FROM resume_label u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 13:32:32.831 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 13:32:32 | 耗时 47 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.company_name, u.time_start, u.time_end, u.description, u.duty, u.performance, u.project_name FROM resume_project u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 13:35:39.679 febs [scheduling-1] INFO  cc.mrbird.febs.common.task.CacheTask - delete expired user
+2019-04-11 13:42:23.165 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:42:23.165 febs [http-nio-9527-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:42:23.210 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 13:42:23 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u.status, u.birthday, u.create_time createTime, u.ssex, u.company_name companyName, u.avatar, u.resume, u.description, u.last_login_time lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username ) TOTAL;
+2019-04-11 13:42:23.215 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 13:42:23 | 耗时 4 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u.status, u.birthday, u.create_time createTime, u.ssex, u.company_name companyName, u.avatar, u.resume, u.description, u.last_login_time lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 group by u.username ORDER BY userId ASC LIMIT 0,10;
+2019-04-11 13:42:27.986 febs [http-nio-9527-exec-1] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:42:28.004 febs [http-nio-9527-exec-1] INFO  p6spy - 2019-04-11 13:42:28 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_role;
+2019-04-11 13:42:28.006 febs [http-nio-9527-exec-1] INFO  p6spy - 2019-04-11 13:42:28 | 耗时 0 ms | SQL 语句：
+SELECT ROLE_ID,role_name,remark,create_time,modify_time FROM t_role LIMIT 0,10;
+2019-04-11 13:42:31.233 febs [http-nio-9527-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 13:42:31.240 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 13:42:31 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID,parent_id,menu_name,path,component,perms,icon,type,order_num,create_time,modify_time FROM t_menu;
+2019-04-11 14:04:32.849 febs [http-nio-9527-exec-2] INFO  c.m.febs.common.aspect.LimitAspect - IP:127.0.0.1 第 1 次访问key为 [limit_login127.0.0.1]，描述为 [登录接口] 的接口
+2019-04-11 14:04:32.860 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 14:04:32 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET last_login_time='2019-04-11T14:04:32.855+0800' WHERE username = 'mrbird';
+2019-04-11 14:04:32.874 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 14:04:32 | 耗时 10 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'mrbird';
+2019-04-11 14:04:33.468 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 14:04:33 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_login_log ( username, login_time, location, ip ) VALUES ( 'mrbird', '2019-04-11T14:04:32.886+0800', '', '127.0.0.1' );
+2019-04-11 14:04:34.472 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:04:34.478 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 14:04:34 | 耗时 2 ms | SQL 语句：
+select m.* from t_menu m where m.type <> 1 and m.MENU_ID in (select distinct rm.menu_id from t_role_menu rm left join t_role r on (rm.role_id = r.role_id) left join t_user_role ur on (ur.role_id = r.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird') order by m.order_num;
+2019-04-11 14:04:34.915 febs [http-nio-9527-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:04:34.916 febs [http-nio-9527-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:04:34.922 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 14:04:34 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 14:04:34.924 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 14:04:34 | 耗时 0 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 14:04:34.930 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 14:04:34 | 耗时 10 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 GROUP BY u.name ) TOTAL;
+2019-04-11 14:04:34.939 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 14:04:34 | 耗时 7 ms | SQL 语句：
+SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 group by u.name ORDER BY id ASC LIMIT 0,10;
+2019-04-11 14:31:30.649 febs [http-nio-9527-exec-10] INFO  c.m.febs.common.aspect.LimitAspect - IP:127.0.0.1 第 1 次访问key为 [limit_login127.0.0.1]，描述为 [登录接口] 的接口
+2019-04-11 14:31:30.659 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 14:31:30 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET last_login_time='2019-04-11T14:31:30.654+0800' WHERE username = 'mrbird';
+2019-04-11 14:31:30.664 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 14:31:30 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'mrbird';
+2019-04-11 14:31:31.418 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 14:31:31 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_login_log ( username, login_time, location, ip ) VALUES ( 'mrbird', '2019-04-11T14:31:30.743+0800', '', '127.0.0.1' );
+2019-04-11 14:31:32.325 febs [http-nio-9527-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:31:32.331 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 14:31:32 | 耗时 2 ms | SQL 语句：
+select m.* from t_menu m where m.type <> 1 and m.MENU_ID in (select distinct rm.menu_id from t_role_menu rm left join t_role r on (rm.role_id = r.role_id) left join t_user_role ur on (ur.role_id = r.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird') order by m.order_num;
+2019-04-11 14:31:32.814 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:31:32.815 febs [http-nio-9527-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:31:32.824 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 14:31:32 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 14:31:32.826 febs [http-nio-9527-exec-9] INFO  p6spy - 2019-04-11 14:31:32 | 耗时 0 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 14:31:32.832 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 14:31:32 | 耗时 9 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 GROUP BY u.name ) TOTAL;
+2019-04-11 14:31:32.840 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 14:31:32 | 耗时 7 ms | SQL 语句：
+SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 group by u.name ORDER BY id ASC LIMIT 0,10;
+2019-04-11 14:31:56.169 febs [http-nio-9527-exec-1] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:31:56.175 febs [http-nio-9527-exec-1] INFO  p6spy - 2019-04-11 14:31:56 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_person t WHERE 1 = 1;
+2019-04-11 14:31:56.178 febs [http-nio-9527-exec-1] INFO  p6spy - 2019-04-11 14:31:56 | 耗时 1 ms | SQL 语句：
+select t.PERSON_ID, t.PERSON_NAME, t.PERSON_SEX, t.PERSON_SORT, t.PERSON_LEVEL, t.COMPANY_NAME, t.BIRTHDAY, t.ACCOUNT, t.COMPUTER, t.CONTENT, t.CREATE_TIME, t.CURRENT_ADDRESS, t.CURRENT_SALARY, t.EDUCATION_BACKGROUND, t.EDUCATION_RECORD, t.HEIGHT, t.WEIGHT, t.IDENTITY_CARD, t.EMAIL, t.LANGUAGE_SKILL, t.GRADUATE_INSTITUTIONS, t.GRADUATE_TIME, t.WORK_YEARS, t.WORK_EXPERIENCE, t.WORK_PHONE, t.MAJOR, t.MARITAL_STATUS, t.MOBILE_PHONE, t.MODIFY_TIME, t.OFFICE_TERM, t.NATION, t.NATIONALITY, t.NATIVE_PLACE, t.SELF_ASSESSMENT, t.FAMILY_PHONE, t.POSITION_NAME, t.PROJECT_EXPERIENCE, t.TRAIN_RECORD, t.RELATED_SKILL, t.USER_ID, t.RESUME from t_person t where 1=1 ORDER BY person_id ASC LIMIT 0,10;
+2019-04-11 14:35:39.680 febs [scheduling-1] INFO  cc.mrbird.febs.common.task.CacheTask - delete expired user
+2019-04-11 14:40:17.547 febs [http-nio-9527-exec-7] INFO  c.m.febs.common.aspect.LimitAspect - IP:127.0.0.1 第 1 次访问key为 [limit_login127.0.0.1]，描述为 [登录接口] 的接口
+2019-04-11 14:40:17.554 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 14:40:17 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET last_login_time='2019-04-11T14:40:17.550+0800' WHERE username = 'mrbird';
+2019-04-11 14:40:17.557 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 14:40:17 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,username,password,company_name,email,mobile,status,create_time,modify_time,birthday,last_login_time,ssex,description,avatar,resume FROM t_user WHERE username = 'mrbird';
+2019-04-11 14:40:18.292 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 14:40:18 | 耗时 0 ms | SQL 语句：
+INSERT INTO t_login_log ( username, login_time, location, ip ) VALUES ( 'mrbird', '2019-04-11T14:40:17.586+0800', '', '127.0.0.1' );
+2019-04-11 14:40:19.199 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:40:19.205 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 14:40:19 | 耗时 2 ms | SQL 语句：
+select m.* from t_menu m where m.type <> 1 and m.MENU_ID in (select distinct rm.menu_id from t_role_menu rm left join t_role r on (rm.role_id = r.role_id) left join t_user_role ur on (ur.role_id = r.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird') order by m.order_num;
+2019-04-11 14:40:19.654 febs [http-nio-9527-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:40:19.655 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:40:19.659 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 14:40:19 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 14:40:19.661 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 14:40:19 | 耗时 0 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 14:40:19.676 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 14:40:19 | 耗时 17 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 GROUP BY u.name ) TOTAL;
+2019-04-11 14:40:19.685 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 14:40:19 | 耗时 7 ms | SQL 语句：
+SELECT u.id, u.name, u.address, u.description, u.salary, u.issue_time, u.issue_time_desc, u.need_work_time, u.issue_company, u.requested FROM sys_position u WHERE 1 = 1 group by u.name ORDER BY id ASC LIMIT 0,10;
+2019-04-11 14:40:47.550 febs [http-nio-9527-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:40:47.556 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 14:40:47 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_company t WHERE 1 = 1;
+2019-04-11 14:40:47.558 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 14:40:47 | 耗时 1 ms | SQL 语句：
+select t.COMPANY_ID, t.COMPANY_NAME, t.COMPANY_ADDRESS, t.finance, t.scale, t.nature, t.info, t.tag1, t.tag2, t.tag3, t.CREATE_TIME, t.MODIFY_TIME from t_company t where 1=1 ORDER BY COMPANY_ID ASC LIMIT 0,10;
+2019-04-11 14:40:59.158 febs [http-nio-9527-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:40:59.163 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 14:40:59 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_person t WHERE 1 = 1;
+2019-04-11 14:40:59.165 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 14:40:59 | 耗时 1 ms | SQL 语句：
+select t.PERSON_ID, t.PERSON_NAME, t.PERSON_SEX, t.PERSON_SORT, t.PERSON_LEVEL, t.COMPANY_NAME, t.BIRTHDAY, t.ACCOUNT, t.COMPUTER, t.CONTENT, t.CREATE_TIME, t.CURRENT_ADDRESS, t.CURRENT_SALARY, t.EDUCATION_BACKGROUND, t.EDUCATION_RECORD, t.HEIGHT, t.WEIGHT, t.IDENTITY_CARD, t.EMAIL, t.LANGUAGE_SKILL, t.GRADUATE_INSTITUTIONS, t.GRADUATE_TIME, t.WORK_YEARS, t.WORK_EXPERIENCE, t.WORK_PHONE, t.MAJOR, t.MARITAL_STATUS, t.MOBILE_PHONE, t.MODIFY_TIME, t.OFFICE_TERM, t.NATION, t.NATIONALITY, t.NATIVE_PLACE, t.SELF_ASSESSMENT, t.FAMILY_PHONE, t.POSITION_NAME, t.PROJECT_EXPERIENCE, t.TRAIN_RECORD, t.RELATED_SKILL, t.USER_ID, t.RESUME from t_person t where 1=1 ORDER BY person_id ASC LIMIT 0,10;
+2019-04-11 14:41:20.282 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:41:20.293 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 14:41:20 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_project t WHERE 1 = 1;
+2019-04-11 14:41:20.295 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 14:41:20 | 耗时 1 ms | SQL 语句：
+select t.PROJECT_ID, t.PROJECT_CODE, t.PROJECT_NAME, t.START_TIME, t.PLAN_FINISH_TIME, t.PROJECT_STATUS, t.PRIORITY_LEVEL, t.COMPANY_NAME, t.GATHER_STATUS, t.CUSTOMER_MANAGER, t.BUSINESS_PERSON, t.PROJECT_CHARGE, t.PROJECT_COUNSELOR, t.COMPANY_CONTACT, t.SEARCH_PERSON, t.COMPANY_PAYER, t.COMPANY_INFO, t.REPORT_OBJECT, t.SUBORDINATE_POSITION, t.WORK_ADDRESS, t.NUMBER, t.TRADE, t.SUITABLE_FUNCTION, t.LANGUAGE_REQUIRE, t.SEX_REQUIRE, t.POSITION_LEVEL, t.POSITION_SORT, t.AGE_REQUIRE, t.POSITION_INFO, t.POSITION_REASON, t.SALARY_RANGE, t.BONUS, t.WELFARE, t.PROGRESS, t.EXECUTION_ANALYZE, t.USER_ID, t.MODIFY_TIME, t.CREATE_TIME from t_project t where 1=1 ORDER BY PROJECT_ID ASC LIMIT 0,10;
+2019-04-11 14:41:34.139 febs [http-nio-9527-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:41:34.149 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 14:41:34 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_contract t WHERE 1 = 1;
+2019-04-11 14:41:34.151 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 14:41:34 | 耗时 1 ms | SQL 语句：
+select t.CONTRACT_ID, t.CONTRACT_NAME, t.CONTRACT_CODE, t.START_TIME, t.FINISH_TIME, t.MAKE_INVOICE_TIME, t.PAY_WAY, t.COMPANY_SIGNED, t.CUSTOMER_SIGNED, t.SIGNED_TIME, t.SIGNED_ADDRESS, t.STORE_ADDRESS, t.FILL_TIME, t.MONEY, t.MONEY, t.CONTRACT_INFO, t.ORDER_NUMBER, t.INFO, t.USER_ID, t.CREATE_TIME, t.MODIFY_TIME from t_contract t where 1=1 ORDER BY CONTRACT_ID ASC LIMIT 0,10;
+2019-04-11 14:41:53.078 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:41:53.083 febs [http-nio-9527-exec-5] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:41:53.085 febs [http-nio-9527-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:41:53.088 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 14:41:53 | 耗时 1 ms | SQL 语句：
+SELECT ID,user_id,photo,profession,address FROM sys_resume WHERE user_id = 1;
+2019-04-11 14:41:53.094 febs [http-nio-9527-exec-4] INFO  p6spy - 2019-04-11 14:41:53 | 耗时 1 ms | SQL 语句：
+SELECT u.id, u.account, u.resume_id, u.status FROM resume_data u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 14:41:53.098 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:41:53.101 febs [http-nio-9527-exec-5] INFO  p6spy - 2019-04-11 14:41:53 | 耗时 2 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.content FROM resume_assessment u LEFT JOIN sys_resume sr on u.id = u.resume_id where sr.user_id = 1;
+2019-04-11 14:41:53.102 febs [http-nio-9527-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:41:53.106 febs [http-nio-9527-exec-3] INFO  p6spy - 2019-04-11 14:41:53 | 耗时 1 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.company_address, u.company_intro, u.company_name, u.company_nature, u.company_scale, u.company_trade, u.department, u.employment_period_from, u.employment_period_to, u.job_performance, u.monthly_pay, u.monthly_pay_number, u.under_number FROM resume_experience u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 14:41:53.108 febs [http-nio-9527-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:41:53.114 febs [http-nio-9527-exec-6] INFO  p6spy - 2019-04-11 14:41:53 | 耗时 1 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.education, u.major_name, u.recruitment_flag, u.school_name, u.time_end, u.time_start FROM resume_education u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 14:41:53.115 febs [http-nio-9527-exec-7] INFO  p6spy - 2019-04-11 14:41:53 | 耗时 1 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.content FROM resume_information u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 14:41:53.132 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:41:53.137 febs [http-nio-9527-exec-1] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:41:53.139 febs [http-nio-9527-exec-8] INFO  p6spy - 2019-04-11 14:41:53 | 耗时 1 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.address, u.annual_salary, u.current_salary, u.functional, u.trade FROM resume_intention u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 14:41:53.140 febs [http-nio-9527-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:41:53.140 febs [http-nio-9527-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2019-04-11 14:41:53.144 febs [http-nio-9527-exec-1] INFO  p6spy - 2019-04-11 14:41:53 | 耗时 1 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.grade, u.language, u.proficiency FROM resume_language u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 14:41:53.146 febs [http-nio-9527-exec-10] INFO  p6spy - 2019-04-11 14:41:53 | 耗时 1 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.company_name, u.time_start, u.time_end, u.description, u.duty, u.performance, u.project_name FROM resume_project u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;
+2019-04-11 14:41:53.150 febs [http-nio-9527-exec-2] INFO  p6spy - 2019-04-11 14:41:53 | 耗时 2 ms | SQL 语句：
+SELECT u.id, u.resume_id, u.label_name FROM resume_label u LEFT JOIN sys_resume sr on sr.id = u.resume_id where sr.user_id = 1;

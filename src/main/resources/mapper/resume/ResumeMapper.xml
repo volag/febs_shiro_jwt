@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.resume.dao.ResumeMapper">
+    <resultMap id="BaseResultMap" type="cc.mrbird.febs.resume.domain.Resume">
+        <id column="resume_id" jdbcType="DECIMAL" property="resumeId"/>
+        <result column="user_id" jdbcType="DECIMAL" property="userId"/>
+        <result column="photo" jdbcType="VARCHAR" property="photo"/>
+        <result column="profession" jdbcType="DECIMAL" property="profession"/>
+        <result column="user_address" jdbcType="VARCHAR" property="userAddress"/>
+        <result column="language" jdbcType="VARCHAR" property="language"/>
+        <result column="proficiency" jdbcType="VARCHAR" property="proficiency"/>
+        <result column="grade" jdbcType="VARCHAR" property="grade"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+        <result column="account" jdbcType="VARCHAR" property="account"/>
+        <result column="trade" jdbcType="VARCHAR" property="trade"/>
+        <result column="functional" jdbcType="VARCHAR" property="functional"/>
+        <result column="work_address" jdbcType="VARCHAR" property="workAddress"/>
+        <result column="annual_salary" jdbcType="DOUBLE" property="annualSalary"/>
+        <result column="current_salary" jdbcType="DOUBLE" property="currentSalary"/>
+        <result column="user_company" jdbcType="VARCHAR" property="userCompany"/>
+        <result column="company_trade" jdbcType="VARCHAR" property="companyTrade"/>
+        <result column="company_address" jdbcType="VARCHAR" property="companyAddress"/>
+        <result column="under_number" jdbcType="INTEGER" property="underNumber"/>
+        <result column="employment_period_from" jdbcType="DATE" property="employmentPeriodFrom"/>
+        <result column="employment_period_to" jdbcType="DATE" property="employmentPeriodTo"/>
+        <result column="job_performance" jdbcType="VARCHAR" property="jobPerformance"/>
+        <result column="department" jdbcType="VARCHAR" property="department"/>
+        <result column="company_nature" jdbcType="VARCHAR" property="companyNature"/>
+        <result column="company_scale" jdbcType="VARCHAR" property="companyScale"/>
+        <result column="company_intro" jdbcType="VARCHAR" property="companyIntro"/>
+        <result column="monthly_pay_number" jdbcType="DOUBLE" property="monthlyPayNumber"/>
+        <result column="monthly_pay" jdbcType="INTEGER" property="monthlyPay"/>
+        <result column="label_name" jdbcType="VARCHAR" property="labelName"/>
+        <result column="school_name" jdbcType="VARCHAR" property="schoolName"/>
+        <result column="major_name" jdbcType="VARCHAR" property="majorName"/>
+        <result column="study_start" jdbcType="DATE" property="studyStart"/>
+        <result column="study_end" jdbcType="DATE" property="studyEnd"/>
+        <result column="education" jdbcType="VARCHAR" property="education"/>
+        <result column="recruitment_flag" jdbcType="VARCHAR" property="recruitmentFlag"/>
+        <result column="project_name" jdbcType="VARCHAR" property="projectName"/>
+        <result column="company_name" jdbcType="VARCHAR" property="companyName"/>
+        <result column="time_start" jdbcType="DATE" property="timeStart"/>
+        <result column="time_end" jdbcType="DATE" property="timeEnd"/>
+        <result column="description" jdbcType="VARCHAR" property="description"/>
+        <result column="duty" jdbcType="VARCHAR" property="duty"/>
+        <result column="performance" jdbcType="VARCHAR" property="performance"/>
+        <result column="self_assessment" jdbcType="VARCHAR" property="selfAssessment"/>
+        <result column="add_information" jdbcType="VARCHAR" property="addInformation"/>
+        <result column="resume_name" jdbcType="VARCHAR" property="resumeName"/>
+        <result column="position_name" jdbcType="VARCHAR" property="positionName"/>
+    </resultMap>
+
+    <select id="findResumeDetail" resultMap="BaseResultMap" parameterType="resume">
+        SELECT
+        u.resume_id,
+        u.user_id,
+        u.photo,
+        u.profession,
+        u.user_address,
+        u.self_assessment,
+        u.status,
+        u.school_name,
+        u.major_name,
+        u.study_end,
+        u.study_start,
+        u.education,
+        u.recruitment_flag,
+        u.user_company,
+        u.company_trade,
+        u.position_name,
+        u.company_address,
+        u.under_number,
+        u.employment_period_to,
+        u.employment_period_from,
+        u.department,
+        u.job_performance,
+        u.company_nature,
+        u.company_scale,
+        u.company_intro,
+        u.monthly_pay_number,
+        u.monthly_pay,
+        u.add_information,
+        u.label_name,
+        u.language,
+        u.proficiency,
+        u.grade,
+        u.project_name,
+        u.company_name,
+        u.time_end,
+        u.time_start,
+        u.description,
+        u.duty,
+        u.performance,
+        u.resume_name,
+        u.trade,
+        u.functional,
+        u.work_address,
+        u.annual_salary,
+        u.current_salary
+        from t_resume u
+        where 1 = 1
+        <if test="resume.userId != null and resume.userId != ''">
+            AND u.user_id = #{resume.userId}
+        </if>
+    </select>
+
+</mapper>

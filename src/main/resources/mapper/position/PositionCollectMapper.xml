@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.position.dao.PositionCollectMapper">
+    <resultMap id="BaseResultMap" type="cc.mrbird.febs.position.domain.PositionCollect">
+        <id column="ID" jdbcType="DECIMAL" property="id"/>
+        <result column="USER_Id" jdbcType="DECIMAL" property="userId"/>
+        <result column="POSITION_ID" jdbcType="DECIMAL" property="positionId"/>
+        <result column="COLLECT_TIME" jdbcType="TIMESTAMP" property="collectTime"/>
+    </resultMap>
+
+    <select id="findPositionCollectDetail" resultMap="BaseResultMap" parameterType="positionCollect">
+        SELECT
+        u.id
+        FROM
+        t_position_collect u
+        WHERE u.USER_Id = #{positionCollect.userId}
+        and u.POSITION_ID = #{positionCollect.positionId}
+    </select>
+</mapper>

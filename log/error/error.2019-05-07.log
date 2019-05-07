@@ -1,0 +1,4 @@
+2019-05-07 10:45:27.650 febs [http-nio-9527-exec-1] ERROR c.m.febs.common.utils.AddressUtil - 获取地址信息异常：null
+2019-05-07 10:48:46.299 febs [http-nio-9527-exec-1] ERROR c.m.febs.common.utils.AddressUtil - 获取地址信息异常：null
+2019-05-07 10:48:47.359 febs [http-nio-9527-exec-8] ERROR c.m.f.c.h.GlobalExceptionHandler - 权限不足，Subject does not have permission [project:view]
+2019-05-07 10:49:14.543 febs [http-nio-9527-exec-1] ERROR c.m.febs.common.utils.AddressUtil - 获取地址信息异常：null

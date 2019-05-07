@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.contract.dao.ContractMapper">
+    <resultMap id="BaseResultMap" type="cc.mrbird.febs.contract.domain.Contract">
+        <id column="CONTRACT_ID" jdbcType="DECIMAL" property="contractId"/>
+        <result column="contractName" jdbcType="VARCHAR" property="contractName"/>
+        <result column="CONTRACT_CODE" jdbcType="VARCHAR" property="contractCode"/>
+        <result column="startTime" jdbcType="TIMESTAMP" property="startTime"/>
+        <result column="finishTime" jdbcType="TIMESTAMP" property="finishTime"/>
+        <result column="makeInvoiceTime" jdbcType="TIMESTAMP" property="makeInvoiceTime"/>
+        <result column="PAY_WAY" jdbcType="VARCHAR" property="payWay"/>
+        <result column="COMPANY_SIGNED" jdbcType="VARCHAR" property="companySigned"/>
+        <result column="CUSTOMER_SIGNED" jdbcType="VARCHAR" property="customerSigned"/>
+        <result column="SIGNED_TIME" jdbcType="TIMESTAMP" property="signedTime"/>
+        <result column="SIGNED_ADDRESS" jdbcType="VARCHAR" property="signedAddress"/>
+        <result column="STORE_ADDRESS" jdbcType="VARCHAR" property="storeAddress"/>
+        <result column="FILL_TIME" jdbcType="DATE" property="fillTime"/>
+        <result column="MONEY" jdbcType="DOUBLE" property="money"/>
+        <result column="EXECUTE_STATUS" jdbcType="VARCHAR" property="executeStatus"/>
+        <result column="CONTRACT_INFO" jdbcType="VARCHAR" property="contractInfo"/>
+        <result column="ORDER_NUMBER" jdbcType="VARCHAR" property="orderNumber"/>
+        <result column="INFO" jdbcType="VARCHAR" property="info"/>
+        <result column="USER_ID" jdbcType="DECIMAL" property="userId"/>
+        <result column="createTime" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="MODIFY_TIME" jdbcType="TIMESTAMP" property="modifyTime"/>
+    </resultMap>
+
+    <sql id="findCONTRACT">
+
+    </sql>
+
+    <select id="findContractDetail" parameterType="contract" resultMap="BaseResultMap">
+        select
+        t.CONTRACT_ID,
+        t.CONTRACT_NAME contractName,
+        t.CONTRACT_CODE,
+        t.START_TIME startTime,
+        t.FINISH_TIME finishTime,
+        t.MAKE_INVOICE_TIME makeInvoiceTime,
+        t.PAY_WAY,
+        t.COMPANY_SIGNED,
+        t.CUSTOMER_SIGNED,
+        t.SIGNED_TIME,
+        t.SIGNED_ADDRESS,
+        t.STORE_ADDRESS,
+        t.FILL_TIME,
+        t.MONEY,
+        t.EXECUTE_STATUS,
+        t.CONTRACT_INFO,
+        t.ORDER_NUMBER,
+        t.INFO,
+        t.USER_ID,
+        t.CREATE_TIME createTime,
+        t.MODIFY_TIME
+        from t_contract t
+        where 1=1
+        <if test="contract.contractName!=null and contract.contractName!=''">
+            and t.CONTRACT_NAME like '%${contract.contractName}%'
+        </if>
+        <if test="contract.contractCode!=null and contract.contractCode!=''">
+            and t.CONTRACT_CODE like '%${contract.contractCode}%'
+        </if>
+        <if test="contract.createTimeFrom != null and contract.createTimeFrom !=''">
+            And t.CREATE_TIME &gt; #{contract.createTimeFrom}
+        </if>
+        <if test="contract.createTimeTo!= null and contract.createTimeTo !=''">
+            And t.CREATE_TIME &lt; #{contract.createTimeTo}
+        </if>
+        <if test="contract.signedTimeFrom != null and contract.signedTimeFrom !=''">
+            And t.SIGNED_TIME &gt; #{contract.signedTimeFrom}
+        </if>
+        <if test="contract.signedTimeTo!= null and contract.signedTimeTo !=''">
+            And t.SIGNED_TIME &lt; #{contract.signedTimeTo}
+        </if>
+    </select>
+
+
+</mapper>
