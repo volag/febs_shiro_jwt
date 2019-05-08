@@ -7,6 +7,7 @@ import cc.mrbird.febs.common.exception.FebsException;
 import cc.mrbird.febs.common.service.QnUploadService;
 import cc.mrbird.febs.common.upload.FileMsg;
 import cc.mrbird.febs.resume.domain.Resume;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -39,7 +40,7 @@ public class ResumeController extends BaseController {
 
     @Log("增加简历")
     @PostMapping
-    //@RequiresPermissions("resume:add")
+    @ApiOperation(value = "增加简历")
     public void addResume(@Valid Resume resume) throws FebsException {
         try {
             this.resumeService.createResume(resume);
@@ -53,6 +54,7 @@ public class ResumeController extends BaseController {
 
 
     @PostMapping("uploadAvatar")
+    @ApiOperation(value = "上传简历头像")
     //使用MultipartFile 作为入参
     public FileMsg uploadAvatar(@RequestParam(name="file") MultipartFile file,
                                 @NotBlank(message = "{required}") String resumeId,
@@ -81,6 +83,7 @@ public class ResumeController extends BaseController {
 
     @Log("删除简历")
     @DeleteMapping("/{resumeIds}")
+    @ApiOperation(value = "删除简历")
     public void deleteResumes(@NotBlank(message = "{required}") @PathVariable String id) throws FebsException {
         try {
             this.resumeService.deleteResume(id);
@@ -92,6 +95,7 @@ public class ResumeController extends BaseController {
     }
 
     @Log("修改简历信息")
+    @ApiOperation(value = "修改简历信息")
     @PutMapping
     public void updateResume(@Valid Resume resume) throws FebsException {
         try {

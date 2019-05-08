@@ -6,6 +6,7 @@ import cc.mrbird.febs.common.domain.QueryRequest;
 import cc.mrbird.febs.common.exception.FebsException;
 import cc.mrbird.febs.position.domain.PositionCollect;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,7 @@ public class PositionCollectController extends BaseController {
 
     @GetMapping
     @RequiresPermissions("position:view")
+    @ApiOperation(value = "查询职位收藏信息")
     public Boolean PositionList(QueryRequest request, PositionCollect positionCollect) {
 
         return this.PositionCollectService.findPositionCollect(request,positionCollect) == null;
@@ -35,6 +37,7 @@ public class PositionCollectController extends BaseController {
 
     @Log("收藏职位")
     @PostMapping
+    @ApiOperation(value = "收藏职位")
     public void addPositionCollect(@Valid PositionCollect positionCollect) throws FebsException {
         try {
             this.PositionCollectService.createPositionCollect(positionCollect);
@@ -48,6 +51,7 @@ public class PositionCollectController extends BaseController {
 
     @Log("删除收藏的职位")
     @DeleteMapping("/{positionCollectIds}")
+    @ApiOperation(value = "取消收藏")
     public void deletePositionCollects(@NotBlank(message = "{required}") @PathVariable String positionCollectIds) throws FebsException {
         try {
             String[] ids = positionCollectIds.split(StringPool.COMMA);

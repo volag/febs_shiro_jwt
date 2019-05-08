@@ -7,6 +7,7 @@ import cc.mrbird.febs.common.exception.FebsException;
 import cc.mrbird.febs.position.domain.Position;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.wuwenze.poi.ExcelKit;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,12 +33,14 @@ public class PositionController extends BaseController {
 
     @GetMapping
     @RequiresPermissions("position:view")
+    @ApiOperation(value = "查询职位信息")
     public Map<String, Object> PositionList(QueryRequest request, Position position) {
         return getDataTable(this.positionService.findPositionDetail(position, request));
     }
 
     @PostMapping(value = "/condition")
     @RequiresPermissions("position:view")
+    @ApiOperation(value = "条件查询职位信息")
     public Map<String, Object> PositionListCondition(QueryRequest request, Position position) {
         return getDataTable(this.positionService.findPositionCondition(position, request));
     }
@@ -45,6 +48,7 @@ public class PositionController extends BaseController {
     @Log("查找公司发布的职位")
     @GetMapping("/{companyName}")
     @RequiresPermissions("position:view")
+    @ApiOperation(value = "查找公司发布的职位")
     public List<Position> findPosition(@NotBlank(message = "{required}") @PathVariable String companyName) throws FebsException {
         try {
             return this.positionService.findByCompanyName(companyName);
@@ -57,11 +61,13 @@ public class PositionController extends BaseController {
 
     @GetMapping(value = "/collect")
     @RequiresPermissions("position:view")
+    @ApiOperation(value = "查询收藏的职位")
     public Map<String, Object> PositionCollectList(QueryRequest request, String userId) {
         return getDataTable(this.positionService.findCollect(userId, request));
     }
 
     @GetMapping(value = "/send")
+    @ApiOperation(value = "查询投递的职位")
     @RequiresPermissions("position:view")
     public Map<String, Object> PositionSendList(QueryRequest request, String userId) {
         return getDataTable(this.positionService.findSend(userId, request));
@@ -70,6 +76,7 @@ public class PositionController extends BaseController {
     @Log("新增职位")
     @PostMapping
     @RequiresPermissions("position:add")
+    @ApiOperation(value = "新增职位")
     public void addPosition(@Valid Position position) throws FebsException {
         try {
             this.positionService.createPosition(position);
@@ -84,6 +91,7 @@ public class PositionController extends BaseController {
     @Log("删除职位")
     @DeleteMapping("/{positionIds}")
     @RequiresPermissions("position:delete")
+    @ApiOperation(value = "删除职位")
     public void deletePositions(@NotBlank(message = "{required}") @PathVariable String positionIds) throws FebsException {
         try {
             String[] ids = positionIds.split(StringPool.COMMA);
@@ -98,6 +106,7 @@ public class PositionController extends BaseController {
     @Log("修改职位信息")
     @PutMapping
     @RequiresPermissions("position:update")
+    @ApiOperation(value = "修改职位信息")
     public void updatePosition(@Valid Position position) throws FebsException {
         try {
             this.positionService.updatePosition(position);
@@ -110,6 +119,7 @@ public class PositionController extends BaseController {
 
     @PostMapping("excel")
     @RequiresPermissions("position:export")
+    @ApiOperation(value = "导出职位信息")
     public void export(QueryRequest queryRequest, Position position, HttpServletResponse response) throws FebsException {
         try {
             List<Position> Positions = this.positionService.findPositionDetail(position, queryRequest).getRecords();

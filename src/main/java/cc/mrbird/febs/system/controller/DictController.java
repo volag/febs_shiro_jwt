@@ -8,6 +8,7 @@ import cc.mrbird.febs.system.domain.Dict;
 import cc.mrbird.febs.system.service.DictService;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.wuwenze.poi.ExcelKit;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,7 @@ public class DictController extends BaseController {
 
     @GetMapping
     @RequiresPermissions("dict:view")
+    @ApiOperation(value = "查询字典信息")
     public Map<String, Object> DictList(QueryRequest request, Dict dict) {
         return getDataTable(this.dictService.findDicts(request, dict));
     }
@@ -40,6 +42,7 @@ public class DictController extends BaseController {
     @Log("新增字典")
     @PostMapping
     @RequiresPermissions("dict:add")
+    @ApiOperation(value = "新增字典")
     public void addDict(@Valid Dict dict) throws FebsException {
         try {
             this.dictService.createDict(dict);
@@ -53,6 +56,7 @@ public class DictController extends BaseController {
     @Log("删除字典")
     @DeleteMapping("/{dictIds}")
     @RequiresPermissions("dict:delete")
+    @ApiOperation(value = "删除字典")
     public void deleteDicts(@NotBlank(message = "{required}") @PathVariable String dictIds) throws FebsException {
         try {
             String[] ids = dictIds.split(StringPool.COMMA);
@@ -67,6 +71,7 @@ public class DictController extends BaseController {
     @Log("修改字典")
     @PutMapping
     @RequiresPermissions("dict:update")
+    @ApiOperation(value = "修改字典")
     public void updateDict(@Valid Dict dict) throws FebsException {
         try {
             this.dictService.updateDict(dict);

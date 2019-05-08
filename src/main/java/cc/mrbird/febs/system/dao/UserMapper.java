@@ -12,4 +12,5 @@ public interface UserMapper extends BaseMapper<User> {
 	User findByName(@Param("username") String username);
 
 	User findByMobile(@Param("mobile") String mobile);
+
 }

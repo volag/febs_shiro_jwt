@@ -13,6 +13,7 @@ import com.google.common.collect.Lists;
 import com.wuwenze.poi.ExcelKit;
 import com.wuwenze.poi.handler.ExcelReadHandler;
 import com.wuwenze.poi.pojo.ExcelErrorField;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +44,7 @@ public class ProjectController extends BaseController {
 
     @GetMapping
     @RequiresPermissions("project:view")
+    @ApiOperation(value = "查询项目信息")
     public Map<String, Object> ProjectList(QueryRequest request, Project project) {
         return getDataTable(this.projectService.findProjectDetail(project, request));
     }
@@ -51,6 +53,7 @@ public class ProjectController extends BaseController {
     @Log("新增项目")
     @PostMapping
     @RequiresPermissions("project:add")
+    @ApiOperation(value = "新增项目")
     public void addProject(@Valid Project project) throws FebsException {
         try {
             this.projectService.createProject(project);
@@ -65,6 +68,7 @@ public class ProjectController extends BaseController {
     @Log("删除项目")
     @DeleteMapping("/{projectIds}")
     @RequiresPermissions("project:delete")
+    @ApiOperation(value = "删除项目")
     public void deleteProjects(@NotBlank(message = "{required}") @PathVariable String projectIds) throws FebsException {
         try {
             String[] ids = projectIds.split(StringPool.COMMA);
@@ -79,6 +83,7 @@ public class ProjectController extends BaseController {
     @Log("修改项目信息")
     @PutMapping
     @RequiresPermissions("project:update")
+    @ApiOperation(value = "修改项目信息")
     public void updateProject(@Valid Project project) throws FebsException {
         try {
             this.projectService.updateProject(project);
@@ -92,6 +97,7 @@ public class ProjectController extends BaseController {
     @Log("导出项目信息")
     @PostMapping("excel")
     @RequiresPermissions("project:export")
+    @ApiOperation(value = "导出项目信息")
     public void export(QueryRequest queryRequest, Project project, HttpServletResponse response) throws FebsException {
         try {
             List<Project> projects = this.projectService.findProjectDetail(project, queryRequest).getRecords();
@@ -106,6 +112,7 @@ public class ProjectController extends BaseController {
     @Log("导入项目信息")
     @PostMapping("import")
     @RequiresPermissions("project:import")
+    @ApiOperation(value = "导入项目信息")
     public Map<String, Object> importProject(@RequestParam MultipartFile file)
             throws Exception {
         long beginMillis = System.currentTimeMillis();

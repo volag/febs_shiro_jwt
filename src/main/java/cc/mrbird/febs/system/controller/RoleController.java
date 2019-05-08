@@ -10,6 +10,7 @@ import cc.mrbird.febs.system.service.RoleMenuServie;
 import cc.mrbird.febs.system.service.RoleService;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.wuwenze.poi.ExcelKit;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,17 +39,20 @@ public class RoleController extends BaseController {
 
     @GetMapping
     @RequiresPermissions("role:view")
+    @ApiOperation(value = "查询角色")
     public Map<String, Object> roleList(QueryRequest queryRequest, Role role) {
         return getDataTable(roleService.findRoles(role, queryRequest));
     }
 
     @GetMapping("check/{roleName}")
+    @ApiOperation(value = "检查角色名")
     public boolean checkRoleName(@NotBlank(message = "{required}") @PathVariable String roleName) {
         Role result = this.roleService.findByName(roleName);
         return result == null;
     }
 
     @GetMapping("menu/{roleId}")
+    @ApiOperation(value = "查询角色的菜单列表")
     public List<String> getRoleMenus(@NotBlank(message = "{required}") @PathVariable String roleId) {
         List<RoleMenu> list = this.roleMenuServie.getRoleMenusByRoleId(roleId);
         return list.stream().map(roleMenu -> String.valueOf(roleMenu.getMenuId())).collect(Collectors.toList());
@@ -57,6 +61,7 @@ public class RoleController extends BaseController {
     @Log("新增角色")
     @PostMapping
     @RequiresPermissions("role:add")
+    @ApiOperation(value = "新增角色")
     public void addRole(@Valid Role role) throws FebsException {
         try {
             this.roleService.createRole(role);
@@ -70,6 +75,7 @@ public class RoleController extends BaseController {
     @Log("删除角色")
     @DeleteMapping("/{roleIds}")
     @RequiresPermissions("role:delete")
+    @ApiOperation(value = "删除角色")
     public void deleteRoles(@NotBlank(message = "{required}") @PathVariable String roleIds) throws FebsException {
         try {
             String[] ids = roleIds.split(StringPool.COMMA);
@@ -84,6 +90,7 @@ public class RoleController extends BaseController {
     @Log("修改角色")
     @PutMapping
     @RequiresPermissions("role:update")
+    @ApiOperation(value = "修改角色信息")
     public void updateRole(Role role) throws FebsException {
         try {
             this.roleService.updateRole(role);
@@ -96,6 +103,7 @@ public class RoleController extends BaseController {
 
     @PostMapping("excel")
     @RequiresPermissions("role:export")
+    @ApiOperation(value = "导出角色信息")
     public void export(QueryRequest queryRequest, Role role, HttpServletResponse response) throws FebsException {
         try {
             List<Role> roles = this.roleService.findRoles(role, queryRequest).getRecords();

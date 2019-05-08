@@ -13,6 +13,7 @@ import cc.mrbird.febs.system.service.UserConfigService;
 import cc.mrbird.febs.system.service.UserService;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.wuwenze.poi.ExcelKit;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
@@ -49,17 +50,20 @@ public class UserController extends BaseController {
     QnUploadService qnUploadService;
 
     @GetMapping("check/{username}")
+    @ApiOperation(value = "检查用户名", notes = "通过用户名查询是否已经存在")
     public boolean checkUserName(@NotBlank(message = "{required}") @PathVariable String username) {
         return this.userService.findByName(username) == null;
     }
 
     @GetMapping("/{username}")
+    @ApiOperation(value = "用户名查找用户信息")
     public User detail(@NotBlank(message = "{required}") @PathVariable String username) {
         return this.userService.findByName(username);
     }
 
     @GetMapping
     @RequiresPermissions("user:view")
+    @ApiOperation(value = "用户信息查找用户")
     public Map<String, Object> userList(QueryRequest queryRequest, User user) {
         return getDataTable(userService.findUserDetail(user, queryRequest));
     }
@@ -67,6 +71,7 @@ public class UserController extends BaseController {
     @Log("新增用户")
     @PostMapping
     @RequiresPermissions("user:add")
+    @ApiOperation(value = "新增用户")
     public void addUser(@Valid User user) throws FebsException {
         try {
             this.userService.createUser(user);
@@ -80,6 +85,7 @@ public class UserController extends BaseController {
     @Log("修改用户")
     @PutMapping
     @RequiresPermissions("user:update")
+    @ApiOperation(value = "修改用户信息")
     public void updateUser(@Valid User user) throws FebsException {
         try {
             this.userService.updateUser(user);
@@ -93,6 +99,7 @@ public class UserController extends BaseController {
     @Log("删除用户")
     @DeleteMapping("/{userIds}")
     @RequiresPermissions("user:delete")
+    @ApiOperation(value = "删除用户")
     public void deleteUsers(@NotBlank(message = "{required}") @PathVariable String userIds) throws FebsException {
         try {
             String[] ids = userIds.split(StringPool.COMMA);
@@ -105,6 +112,7 @@ public class UserController extends BaseController {
     }
 
     @PutMapping("profile")
+    @ApiOperation(value = "修改用户个人信息")
     public void updateProfile(@Valid User user) throws FebsException {
         try {
             this.userService.updateProfile(user);
@@ -116,6 +124,7 @@ public class UserController extends BaseController {
     }
 
     @PutMapping("avatar")
+    @ApiOperation(value = "更新用户头像")
     public void updateAvatar(
             @NotBlank(message = "{required}") String username,
             @NotBlank(message = "{required}") String avatar) throws FebsException {
@@ -129,6 +138,7 @@ public class UserController extends BaseController {
     }
 
     @PostMapping("uploadAvatar")
+    @ApiOperation(value = "上传用户头像")
     //使用MultipartFile 作为入参
     public FileMsg uploadAvatar(@RequestParam(name="file") MultipartFile file,
                                 @NotBlank(message = "{required}") String username,
@@ -156,6 +166,7 @@ public class UserController extends BaseController {
     }
 
     @PostMapping("uploadResume")
+    @ApiOperation(value = "上传用户简历")
     //使用MultipartFile 作为入参
     public FileMsg uploadResume(@RequestParam(name="file") MultipartFile file,
                           @NotBlank(message = "{required}") String username,
@@ -183,6 +194,7 @@ public class UserController extends BaseController {
     }
 
     @PutMapping("userconfig")
+    @ApiOperation(value = "更新用户系统设置")
     public void updateUserConfig(@Valid UserConfig userConfig) throws FebsException {
         try {
             this.userConfigService.update(userConfig);
@@ -194,6 +206,7 @@ public class UserController extends BaseController {
     }
 
     @GetMapping("password/check")
+    @ApiOperation(value = "检查密码")
     public boolean checkPassword(
             @NotBlank(message = "{required}") String username,
             @NotBlank(message = "{required}") String password) {
@@ -206,6 +219,7 @@ public class UserController extends BaseController {
     }
 
     @PutMapping("password")
+    @ApiOperation(value = "更新用户密码")
     public void updatePassword(
             @NotBlank(message = "{required}") String username,
             @NotBlank(message = "{required}") String password) throws FebsException {
@@ -220,6 +234,7 @@ public class UserController extends BaseController {
 
     @PutMapping("password/reset")
     @RequiresPermissions("user:reset")
+    @ApiOperation(value = "重置用户密码")
     public void resetPassword(@NotBlank(message = "{required}") String usernames) throws FebsException {
         try {
             String[] usernameArr = usernames.split(StringPool.COMMA);
@@ -233,6 +248,7 @@ public class UserController extends BaseController {
 
     @PostMapping("excel")
     @RequiresPermissions("user:export")
+    @ApiOperation(value = "导出用户信息")
     public void export(QueryRequest queryRequest, User user, HttpServletResponse response) throws FebsException {
         try {
             List<User> users = this.userService.findUserDetail(user, queryRequest).getRecords();

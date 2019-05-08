@@ -11,6 +11,7 @@ import com.google.common.collect.Lists;
 import com.wuwenze.poi.ExcelKit;
 import com.wuwenze.poi.handler.ExcelReadHandler;
 import com.wuwenze.poi.pojo.ExcelErrorField;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +40,7 @@ public class PersonController extends BaseController {
 
     @GetMapping
     @RequiresPermissions("person:view")
+    @ApiOperation(value = "查询人才信息")
     public Map<String, Object> PersonList(QueryRequest request, Person Person) {
         return getDataTable(this.personService.findPersonDetail(Person, request));
     }
@@ -46,6 +48,7 @@ public class PersonController extends BaseController {
     @Log("新增职位")
     @PostMapping
     @RequiresPermissions("person:add")
+    @ApiOperation(value = "新增人才信息")
     public void addPerson(@Valid Person person) throws FebsException {
         try {
             this.personService.createPerson(person);
@@ -60,6 +63,7 @@ public class PersonController extends BaseController {
     @Log("删除职位")
     @DeleteMapping("/{personIds}")
     @RequiresPermissions("person:delete")
+    @ApiOperation(value = "删除人才信息")
     public void deletePersons(@NotBlank(message = "{required}") @PathVariable String personIds) throws FebsException {
         try {
             String[] ids = personIds.split(StringPool.COMMA);
@@ -74,6 +78,7 @@ public class PersonController extends BaseController {
     @Log("修改职位信息")
     @PutMapping
     @RequiresPermissions("person:update")
+    @ApiOperation(value = "修改人才信息")
     public void updatePerson(@Valid Person person) throws FebsException {
         try {
             this.personService.updatePerson(person);
@@ -86,6 +91,7 @@ public class PersonController extends BaseController {
 
     @PostMapping("excel")
     @RequiresPermissions("person:export")
+    @ApiOperation(value = "导出人才信息")
     public void export(QueryRequest queryRequest, Person person, HttpServletResponse response) throws FebsException {
         try {
             List<Person> persons = this.personService.findPersonDetail(person, queryRequest).getRecords();
@@ -99,6 +105,7 @@ public class PersonController extends BaseController {
 
     @PostMapping("import")
     @RequiresPermissions("person:import")
+    @ApiOperation(value = "导入人才信息")
     public Map<String, Object> importPerson(@RequestParam MultipartFile file)
             throws Exception {
         long beginMillis = System.currentTimeMillis();

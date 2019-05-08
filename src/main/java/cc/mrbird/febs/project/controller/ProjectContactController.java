@@ -7,6 +7,7 @@ import cc.mrbird.febs.common.exception.FebsException;
 import cc.mrbird.febs.project.domain.ProjectContact;
 import cc.mrbird.febs.project.service.ProjectContactService;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -28,6 +29,7 @@ public class ProjectContactController extends BaseController {
     private ProjectContactService projectContactService;
 
     @GetMapping
+    @ApiOperation(value = "查询项目联系")
     //@RequiresPermissions("Contract:view")
     public Map<String, Object> ProjectContactList(QueryRequest request, ProjectContact projectContact) {
         return getDataTable(this.projectContactService.findProjectContactDetail(projectContact, request));
@@ -35,6 +37,7 @@ public class ProjectContactController extends BaseController {
 
     @Log("新增项目")
     @PostMapping
+    @ApiOperation(value = "新增项目联系")
     //@RequiresPermissions("Contract:add")
     public void addProjectContact(@Valid ProjectContact projectContact) throws FebsException {
         try {
@@ -48,6 +51,7 @@ public class ProjectContactController extends BaseController {
     }
 
     @Log("删除项目")
+    @ApiOperation(value = "删除项目联系")
     @DeleteMapping("/{projectContactIds}")
     //@RequiresPermissions("Contract:delete")
     public void deleteProjectContacts(@NotBlank(message = "{required}") @PathVariable String projectContactIds) throws FebsException {
@@ -63,6 +67,7 @@ public class ProjectContactController extends BaseController {
 
     @Log("修改项目信息")
     @PutMapping
+    @ApiOperation(value = "修改项目联系")
     //@RequiresPermissions("Contract:update")
     public void updateProjectContact(@Valid ProjectContact projectContact) throws FebsException {
         try {

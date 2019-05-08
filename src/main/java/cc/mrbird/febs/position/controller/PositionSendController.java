@@ -7,6 +7,7 @@ import cc.mrbird.febs.common.exception.FebsException;
 import cc.mrbird.febs.position.domain.PositionSend;
 import cc.mrbird.febs.position.domain.PositionSend;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,12 +31,14 @@ public class PositionSendController extends BaseController {
 
     @GetMapping
     @RequiresPermissions("position:view")
+    @ApiOperation(value = "查询投递的职位")
     public Boolean PositionList(QueryRequest request, PositionSend positionSend) {
         log.info(positionSend.toString());
         return this.PositionSendService.findPositionSend(request,positionSend) == null;
     }
     
     @Log("投递职位")
+    @ApiOperation(value = "投递职位")
     @PostMapping
     public void addPositionSend(@Valid PositionSend positionSend) throws FebsException {
         try {
@@ -50,6 +53,7 @@ public class PositionSendController extends BaseController {
 
     @Log("删除投递的职位")
     @DeleteMapping("/{positionSendIds}")
+    @ApiOperation(value = "取消投递")
     public void deletePositionSends(@NotBlank(message = "{required}") @PathVariable String positionSendIds) throws FebsException {
         try {
             String[] ids = positionSendIds.split(StringPool.COMMA);

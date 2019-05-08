@@ -19,6 +19,7 @@ import cc.mrbird.febs.system.service.LoginLogService;
 import cc.mrbird.febs.system.service.UserService;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.lionsoul.ip2region.DbSearcher;
@@ -52,6 +53,7 @@ public class LoginController {
     private ObjectMapper mapper;
 
     @PostMapping("/message")
+    @ApiOperation(value = "给手机发送登录验证码")
     public FebsResponse sendMessage(@NotBlank(message = "{required}") String tel) throws Exception {
         String code = MessageUtil.getRandomCode();
         String result = AliMessageUtil.send(tel,code);
@@ -62,6 +64,7 @@ public class LoginController {
     }
 
     @PostMapping("/message/login")
+    @ApiOperation(value = "手机短信登录")
     @Limit(key = "login", period = 60, count = 20, name = "登录接口", prefix = "limit")
     public FebsResponse messageLogin(@NotBlank(message = "{required}") String tel, @NotBlank(message = "{required}") String code,HttpServletRequest request) throws Exception{
         final String errorMessage = "手机号或验证码错误！";
@@ -96,6 +99,7 @@ public class LoginController {
     }
 
     @PostMapping("/login")
+    @ApiOperation(value = "用户名密码登录")
     @Limit(key = "login", period = 60, count = 20, name = "登录接口", prefix = "limit")
     public FebsResponse login(
             @NotBlank(message = "{required}") String username,
@@ -133,6 +137,7 @@ public class LoginController {
     }
 
     @GetMapping("index/{username}")
+    @ApiOperation(value = "查询用户访问系统记录")
     public FebsResponse index(@NotBlank(message = "{required}") @PathVariable String username) {
         Map<String, Object> data = new HashMap<>();
         // 获取系统访问记录
@@ -154,6 +159,7 @@ public class LoginController {
 
     @RequiresPermissions("user:online")
     @GetMapping("online")
+    @ApiOperation(value = "查询在线用户")
     public FebsResponse userOnline(String username) throws Exception {
         String now = DateUtil.formatFullTime(LocalDateTime.now());
         Set<String> userOnlineStringSet = redisService.zrangeByScore(FebsConstant.ACTIVE_USERS_ZSET_PREFIX, now, "+inf");
@@ -173,6 +179,7 @@ public class LoginController {
 
     @DeleteMapping("kickout/{id}")
     @RequiresPermissions("user:kickout")
+    @ApiOperation(value = "踢出用户")
     public void kickout(@NotBlank(message = "{required}") @PathVariable String id) throws Exception {
         String now = DateUtil.formatFullTime(LocalDateTime.now());
         Set<String> userOnlineStringSet = redisService.zrangeByScore(FebsConstant.ACTIVE_USERS_ZSET_PREFIX, now, "+inf");
@@ -194,11 +201,13 @@ public class LoginController {
     }
 
     @GetMapping("logout/{id}")
+    @ApiOperation(value = "用户注销")
     public void logout(@NotBlank(message = "{required}") @PathVariable String id) throws Exception {
         this.kickout(id);
     }
 
     @PostMapping("regist")
+    @ApiOperation(value = "用户注册")
     public void regist(
             @NotBlank(message = "{required}") String username,
             @NotBlank(message = "{required}") String password,

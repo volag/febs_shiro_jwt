@@ -8,6 +8,7 @@ import cc.mrbird.febs.system.domain.SysLog;
 import cc.mrbird.febs.system.service.LogService;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.wuwenze.poi.ExcelKit;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,7 @@ public class LogController extends BaseController {
 
     @GetMapping
     @RequiresPermissions("log:view")
+    @ApiOperation(value = "查询日志信息")
     public Map<String, Object> logList(QueryRequest request, SysLog sysLog) {
         return getDataTable(logService.findLogs(request, sysLog));
     }
@@ -39,6 +41,7 @@ public class LogController extends BaseController {
     @Log("删除系统日志")
     @DeleteMapping("/{ids}")
     @RequiresPermissions("log:delete")
+    @ApiOperation(value = "删除系统日志")
     public void deleteLogss(@NotBlank(message = "{required}") @PathVariable String ids) throws FebsException {
         try {
             String[] logIds = ids.split(StringPool.COMMA);
@@ -52,6 +55,7 @@ public class LogController extends BaseController {
 
     @PostMapping("excel")
     @RequiresPermissions("log:export")
+    @ApiOperation(value = "导出系统日志")
     public void export(QueryRequest request, SysLog sysLog, HttpServletResponse response) throws FebsException {
         try {
             List<SysLog> sysLogs = this.logService.findLogs(request, sysLog).getRecords();

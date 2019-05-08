@@ -2,7 +2,181 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cdb8ace-d894-4333-8003-8bfe5c96004a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/febs.sql" afterPath="$PROJECT_DIR$/src/main/resources/sql/febs.sql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_5_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_9.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_9.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_0_0_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/config/Swagger2.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/febs_shiro_jwt.iml" afterPath="$PROJECT_DIR$/febs_shiro_jwt.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/FebsApplication.java" afterPath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/FebsApplication.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/JWTFilter.java" afterPath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/JWTFilter.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/UserController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/UserMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" afterPath="$PROJECT_DIR$/target/classes/application.yml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" afterPath="$PROJECT_DIR$/target/classes/banner.txt" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/FebsApplication.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/FebsApplication.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/aspect/LimitAspect.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/aspect/LimitAspect.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/aspect/LogAspect.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/aspect/LogAspect.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/authentication/JWTFilter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/authentication/JWTToken.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/authentication/JWTToken.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/authentication/JWTUtil.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/authentication/JWTUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/authentication/ShiroConfig.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/authentication/ShiroConfig.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/authentication/ShiroRealm.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/authentication/ShiroRealm.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/config/JacksonRedisSerializer.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/config/JacksonRedisSerializer.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/config/P6spySqlFormatConfig.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/config/P6spySqlFormatConfig.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/config/RedisConfig.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/config/RedisConfig.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/controller/BaseController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/controller/BaseController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/converter/StringConverter.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/converter/StringConverter.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/converter/TimeConverter.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/converter/TimeConverter.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/ActiveUser.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/ActiveUser.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/FebsResponse.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/FebsResponse.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/LimitType.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/LimitType.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/QueryRequest.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/QueryRequest.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/RedisInfo.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/RedisInfo.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/SendSmsResponse.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/SendSmsResponse.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/Tree.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/Tree.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/router/RouterMeta.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/router/RouterMeta.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/router/VueRouter.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/domain/router/VueRouter.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/exception/FebsException.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/exception/FebsException.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/exception/LimitAccessException.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/exception/LimitAccessException.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/exception/RedisConnectException.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/exception/RedisConnectException.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/exception/TokenTimeoutException.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/exception/TokenTimeoutException.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/function/JedisExecutor.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/function/JedisExecutor.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/generator/CodeGenerator.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/generator/CodeGenerator.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/handler/GlobalExceptionHandler.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/handler/GlobalExceptionHandler.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/properties/FebsProperties.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/properties/FebsProperties.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/properties/ShiroProperties.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/properties/ShiroProperties.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/runner/CacheInitRunner.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/runner/CacheInitRunner.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/runner/StartedUpRunner.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/runner/StartedUpRunner.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/service/CacheService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/service/CacheService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/service/QnUploadService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/service/QnUploadService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/service/RedisService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/service/RedisService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/service/impl/CacheServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/service/impl/CacheServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/service/impl/QnUploadServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/service/impl/QnUploadServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/service/impl/RedisServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/service/impl/RedisServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/upload/FileMsg.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/upload/FileMsg.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/AliMessageUtil.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/AliMessageUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/CollectionUtil.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/CollectionUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/DateUtil.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/DateUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/EncryptUtil.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/EncryptUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/FebsUtil.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/FebsUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/HttpUtil$TrustAnyHostnameVerifier.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/HttpUtil$TrustAnyHostnameVerifier.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/HttpUtil$TrustAnyTrustManager.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/HttpUtil$TrustAnyTrustManager.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/HttpUtil.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/HttpUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/MD5Util.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/MD5Util.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/MessageUtil.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/MessageUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/SortUtil.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/SortUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/SpringContextUtil.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/SpringContextUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/TreeUtil.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/common/utils/TreeUtil.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/contract/controller/ContractController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/contract/controller/ContractController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/contract/dao/ContractMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/contract/dao/ContractMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/contract/domain/Contract.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/contract/domain/Contract.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/contract/service/ContractService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/contract/service/ContractService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/contract/service/impl/ContractServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/contract/service/impl/ContractServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/person/controller/PersonController$1.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/person/controller/PersonController$1.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/person/controller/PersonController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/person/controller/PersonController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/person/dao/PersonMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/person/dao/PersonMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/person/domain/Person.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/person/domain/Person.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/person/service/PersonService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/person/service/PersonService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/person/service/impl/PersonServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/person/service/impl/PersonServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/controller/PositionCollectController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/controller/PositionCollectController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/controller/PositionController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/controller/PositionController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/controller/PositionSendController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/controller/PositionSendController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/dao/PositionCollectMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/dao/PositionCollectMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/dao/PositionMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/dao/PositionMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/dao/PositionSendMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/dao/PositionSendMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/domain/Position.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/domain/Position.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/domain/PositionCollect.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/domain/PositionCollect.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/domain/PositionSend.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/domain/PositionSend.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/service/PositionCollectService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/service/PositionCollectService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/service/PositionSendService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/service/PositionSendService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/service/PositionService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/service/PositionService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/service/impl/PositionCollectServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/service/impl/PositionCollectServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/service/impl/PositionSendServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/service/impl/PositionSendServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/service/impl/PositionServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/position/service/impl/PositionServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/controller/PersonProjectController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/controller/PersonProjectController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/controller/ProjectContactController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/controller/ProjectContactController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/controller/ProjectController$1.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/controller/ProjectController$1.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/controller/ProjectController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/controller/ProjectController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/dao/PersonProjectMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/dao/PersonProjectMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/dao/ProjectContactMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/dao/ProjectContactMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/dao/ProjectMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/dao/ProjectMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/domain/PersonProject.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/domain/PersonProject.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/domain/Project.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/domain/Project.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/domain/ProjectContact.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/domain/ProjectContact.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/service/PersonProjectService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/service/PersonProjectService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/service/ProjectContactService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/service/ProjectContactService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/service/ProjectService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/service/ProjectService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/service/impl/PersonProjectServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/service/impl/PersonProjectServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/service/impl/ProjectContactServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/service/impl/ProjectContactServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/service/impl/ProjectServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/project/service/impl/ProjectServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/resume/controller/ResumeController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/resume/controller/ResumeController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/resume/dao/ResumeMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/resume/dao/ResumeMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/resume/domain/Resume.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/resume/domain/Resume.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/resume/service/ResumeService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/resume/service/ResumeService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/resume/service/impl/ResumeServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/resume/service/impl/ResumeServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/CompanyController$1.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/CompanyController$1.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/CompanyController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/CompanyController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/DictController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/DictController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/LogController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/LogController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/LoginController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/MenuController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/MenuController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/RoleController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/RoleController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/controller/UserController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/dao/CompanyMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/dao/CompanyMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/dao/LoginLogMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/dao/LoginLogMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/dao/MenuMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/dao/MenuMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/dao/RoleMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/dao/RoleMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/dao/UserMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/dao/UserMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/dao/UserRoleMapper.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/dao/UserRoleMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/Company.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/Company.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/Dict.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/Dict.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/LoginLog.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/LoginLog.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/Menu.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/Menu.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/Role.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/Role.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/RoleMenu.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/RoleMenu.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/SysLog.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/SysLog.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/User.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/User.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/UserConfig.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/UserConfig.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/UserRole.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/domain/UserRole.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/manager/UserManager.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/manager/UserManager.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/CompanyService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/CompanyService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/DictService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/DictService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/LogService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/LogService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/LoginLogService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/LoginLogService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/MenuService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/MenuService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/RoleMenuServie.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/RoleMenuServie.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/RoleService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/RoleService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/UserConfigService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/UserConfigService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/UserRoleService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/UserRoleService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/UserService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/CompanyServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/CompanyServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/DictServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/DictServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/LogServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/LogServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/LoginLogServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/LoginLogServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/MenuServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/MenuServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/RoleMenuServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/RoleMenuServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/RoleServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/RoleServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/UserConfigServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/UserConfigServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/UserRoleServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/UserRoleServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/system/service/impl/UserServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/trade/domain/Trade.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/trade/domain/Trade.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/trade/domain/TradeDirection.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/trade/domain/TradeDirection.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/trade/domain/TradeKind.class" afterPath="$PROJECT_DIR$/target/classes/cc/mrbird/febs/trade/domain/TradeKind.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ip2region/ip2region.db" afterPath="$PROJECT_DIR$/target/classes/ip2region/ip2region.db" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sql/febs.sql" afterPath="$PROJECT_DIR$/target/classes/sql/febs.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,81 +225,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/LoginController.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4884">
-              <caret line="252" column="41" lean-forward="false" selection-start-line="252" selection-start-column="41" selection-end-line="252" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddressUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/AddressUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="febs.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/febs.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="1176" column="11" lean-forward="true" selection-start-line="1176" selection-start-column="11" selection-end-line="1176" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogAspect.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/aspect/LogAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="59" column="50" lean-forward="false" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IPUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/IPUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="45" column="34" lean-forward="false" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResumeServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/resume/service/impl/ResumeServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="49" column="4" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/CompanyServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state relative-caret-position="176">
+              <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -217,16 +321,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/service/PositionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/service/impl/PositionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/Company.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/resume/service/ResumeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/resume/service/impl/ResumeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/position/PositionCollectMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/position/PositionSendMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/domain/Position.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/domain/PositionCollect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/domain/PositionSend.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/trade/domain/TradeDirection.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/trade/domain/TradeKind.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/trade/domain/Trade.java" />
@@ -264,10 +358,20 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/system/CompanyMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/aspect/LogAspect.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/IPUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/utils/AddressUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/sql/febs.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/system/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/Swagger2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/FebsApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/config/Swagger2.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/JWTFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -301,8 +405,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="x" value="66" />
+    <option name="y" value="251" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -383,29 +487,6 @@
               <item name="cc" type="462c0819:PsiDirectoryNode" />
               <item name="mrbird" type="462c0819:PsiDirectoryNode" />
               <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
               <item name="contract" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -429,209 +510,6 @@
               <item name="cc" type="462c0819:PsiDirectoryNode" />
               <item name="mrbird" type="462c0819:PsiDirectoryNode" />
               <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="person" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="person" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="person" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="position" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="position" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="position" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="position" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -651,109 +529,7 @@
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cc" type="462c0819:PsiDirectoryNode" />
-              <item name="mrbird" type="462c0819:PsiDirectoryNode" />
-              <item name="febs" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="position" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="trade" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="febs_shiro_jwt" type="b2602c69:ProjectViewProjectNode" />
@@ -1097,7 +873,7 @@
       <workItem from="1557191487383" duration="1201000" />
       <workItem from="1557197033246" duration="643000" />
       <workItem from="1557198376773" duration="1202000" />
-      <workItem from="1557281891759" duration="70000" />
+      <workItem from="1557281891759" duration="8132000" />
     </task>
     <task id="LOCAL-00001" summary="猎聘管理系统初步完成">
       <created>1557199029926</created>
@@ -1110,43 +886,43 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="422988000" />
+    <option name="totallyTimeSpent" value="431050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-8" width="1307" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955465" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33227345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11764706" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.297166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955465" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955465" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24939272" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45468998" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27503973" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37201908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27662957" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2388664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955465" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32750398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45585874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32591414" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28775835" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1169,7 +945,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1178,179 +954,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/domain/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/project/domain/PersonProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="48" column="39" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/person/controller/PersonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="41" column="27" lean-forward="false" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/controller/PositionCollectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/project/PersonProjectMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/position/PositionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-          <folding>
-            <marker date="1556419473217" expanded="true" signature="1690:3534" ph="SELECT u.id,... sys_position" />
-            <marker date="1556419473217" expanded="true" signature="3645:5608" ph="SELECT u.id,... sys_position" />
-            <marker date="1556419473217" expanded="true" signature="5707:6166" ph="SELECT u.id,... sys_position" />
-            <marker date="1556419473217" expanded="true" signature="6262:6715" ph="SELECT u.id,... sys_position" />
-            <marker date="1556419473217" expanded="true" signature="6711:6715" ph="SELECT u.id,... sys_position" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/controller/PositionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="83" column="16" lean-forward="true" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/controller/PositionSendController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="65" column="34" lean-forward="false" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/project/controller/ProjectContactController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="70" column="27" lean-forward="false" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/resume/dao/ResumeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/project/service/PersonProjectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/project/service/ProjectContactService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/service/PositionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/service/PositionCollectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/service/PositionSendService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/person/service/PersonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="30" column="15" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/project/controller/PersonProjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="71" column="27" lean-forward="false" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/project/controller/ProjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="105" column="4" lean-forward="false" selection-start-line="105" selection-start-column="4" selection-end-line="141" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/project/service/ProjectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="28" column="61" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/project/service/impl/ProjectServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/position/service/impl/PositionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="54" column="39" lean-forward="false" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3068">
-          <caret line="47" column="3" lean-forward="false" selection-start-line="47" selection-start-column="3" selection-end-line="48" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/UserResumeService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/system/UserResumeMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/UserResumeMapper.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/domain/UserResume.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/impl/UserResumeServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1472,6 +1075,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1007">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1479,14 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4884">
           <caret line="252" column="41" lean-forward="false" selection-start-line="252" selection-start-column="41" selection-end-line="252" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1518,7 +1114,247 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/sql/febs.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
-          <caret line="1176" column="11" lean-forward="true" selection-start-line="1176" selection-start-column="11" selection-end-line="1176" selection-end-column="11" />
+          <caret line="1176" column="11" lean-forward="false" selection-start-line="1176" selection-start-column="11" selection-end-line="1176" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/UserRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.1.0/mybatis-plus-core-3.1.0.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-528">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <marker date="1552966865442" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1552966865442" expanded="false" signature="160:409" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spy.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/system/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1556251550908" expanded="true" signature="1499:2750" ph="SELECT u.use... t_user" />
+            <marker date="1556251550908" expanded="true" signature="2845:3492" ph="SELECT u.use... t_user" />
+            <marker date="1556251550908" expanded="true" signature="3589:4228" ph="SELECT u.use... t_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="192" column="21" lean-forward="false" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/JWTUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1139">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-spring/1.4.0/shiro-spring-1.4.0.jar!/org/apache/shiro/spring/web/ShiroFilterFactoryBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="91" column="16" lean-forward="false" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/FebsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/properties/FebsProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/org/apache/coyote/Request.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding>
+            <element signature="e#4821#4822#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/org/apache/catalina/connector/Request.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="1346" column="0" lean-forward="false" selection-start-line="1346" selection-start-column="0" selection-end-line="1346" selection-end-column="0" />
+          <folding>
+            <element signature="e#45804#45805#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/org/apache/catalina/connector/RequestFacade.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="413" column="0" lean-forward="false" selection-start-line="413" selection-start-column="0" selection-end-line="413" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/filter/AccessControlFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar!/org/springframework/util/AntPathMatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="69" column="19" lean-forward="false" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+          <folding>
+            <element signature="e#2570#2571#0" expanded="true" />
+            <element signature="e#2637#2638#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ValidationMessages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/ShiroRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/mgt/DefaultWebSecurityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/mgt/SecurityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-spring/1.4.0/shiro-spring-1.4.0.jar!/org/apache/shiro/spring/security/interceptor/AuthorizationAttributeSourceAdvisor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/filter/authc/BasicHttpAuthenticationFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1124">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="82" column="75" lean-forward="true" selection-start-line="82" selection-start-column="75" selection-end-line="82" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/JWTFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/authentication/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="54" column="36" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/common/config/Swagger2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cc/mrbird/febs/system/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="38" />
           <folding />
         </state>
       </provider>

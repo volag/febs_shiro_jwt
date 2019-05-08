@@ -29,13 +29,14 @@ public class JWTFilter extends BasicHttpAuthenticationFilter {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         FebsProperties febsProperties = SpringContextUtil.getBean(FebsProperties.class);
         String[] anonUrl = StringUtils.splitByWholeSeparatorPreserveAllTokens(febsProperties.getShiro().getAnonUrl(), StringPool.COMMA);
-
         boolean match = false;
         for (String u : anonUrl) {
-            if (pathMatcher.match(u, httpServletRequest.getRequestURI()))
-                match = true;
+            if (pathMatcher.match("/swagger-ui.html", httpServletRequest.getRequestURI())||pathMatcher.match(u, httpServletRequest.getRequestURI()))
+//                match = true;
+                log.info("同意进入！");
+                return true;
         }
-        if (match) return true;
+//        if (match) return true;
         if (isLoginAttempt(request, response)) {
             return executeLogin(request, response);
         }

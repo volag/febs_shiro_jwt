@@ -9,6 +9,7 @@ import cc.mrbird.febs.system.manager.UserManager;
 import cc.mrbird.febs.system.service.MenuService;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.wuwenze.poi.ExcelKit;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,12 +37,14 @@ public class MenuController extends BaseController {
     private MenuService menuService;
 
     @GetMapping("/{username}")
+    @ApiOperation(value = "通过用户名生成路由菜单")
     public ArrayList<VueRouter<Menu>> getUserRouters(@NotBlank(message = "{required}") @PathVariable String username) {
         return this.userManager.getUserRouters(username);
     }
 
     @GetMapping
     @RequiresPermissions("menu:view")
+    @ApiOperation(value = "查询菜单列表")
     public Map<String, Object> menuList(Menu menu) {
         return this.menuService.findMenus(menu);
     }
@@ -49,6 +52,7 @@ public class MenuController extends BaseController {
     @Log("新增菜单/按钮")
     @PostMapping
     @RequiresPermissions("menu:add")
+    @ApiOperation(value = "新增菜单/按钮")
     public void addMenu(@Valid Menu menu) throws FebsException {
         try {
             this.menuService.createMenu(menu);
@@ -62,6 +66,7 @@ public class MenuController extends BaseController {
     @Log("删除菜单/按钮")
     @DeleteMapping("/{menuIds}")
     @RequiresPermissions("menu:delete")
+    @ApiOperation(value = "删除菜单/按钮")
     public void deleteMenus(@NotBlank(message = "{required}") @PathVariable String menuIds) throws FebsException {
         try {
             String[] ids = menuIds.split(StringPool.COMMA);
@@ -76,6 +81,7 @@ public class MenuController extends BaseController {
     @Log("修改菜单/按钮")
     @PutMapping
     @RequiresPermissions("menu:update")
+    @ApiOperation(value = "修改菜单/按钮")
     public void updateMenu(@Valid Menu menu) throws FebsException {
         try {
             this.menuService.updateMenu(menu);
@@ -88,6 +94,7 @@ public class MenuController extends BaseController {
 
     @PostMapping("excel")
     @RequiresPermissions("menu:export")
+    @ApiOperation(value = "导出菜单/按钮")
     public void export(Menu menu, HttpServletResponse response) throws FebsException {
         try {
             List<Menu> menus = this.menuService.findMenuList(menu);

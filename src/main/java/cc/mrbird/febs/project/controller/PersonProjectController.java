@@ -7,6 +7,7 @@ import cc.mrbird.febs.common.exception.FebsException;
 import cc.mrbird.febs.project.domain.PersonProject;
 import cc.mrbird.febs.project.service.PersonProjectService;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,7 @@ public class PersonProjectController extends BaseController {
 
     @GetMapping
 //    @RequiresPermissions("person:view")
+    @ApiOperation(value = "查询人才项目信息")
     public Map<String, Object> PersonProjectList(QueryRequest request, PersonProject personProject) {
         return getDataTable(this.personProjectService.findPersonProjectDetail(personProject, request));
     }
@@ -37,6 +39,7 @@ public class PersonProjectController extends BaseController {
     @Log("新增项目")
     @PostMapping
     //@RequiresPermissions("Contract:add")
+    @ApiOperation(value = "项目添加人才")
     public void addPersonProject(@Valid PersonProject personProject) throws FebsException {
         try {
             this.personProjectService.createPersonProject(personProject);
@@ -50,6 +53,7 @@ public class PersonProjectController extends BaseController {
 
     @Log("删除项目")
     @DeleteMapping("/{personProjectIds}")
+    @ApiOperation(value = "删除项目中的人才")
     //@RequiresPermissions("Contract:delete")
     public void deletePersonProjects(@NotBlank(message = "{required}") @PathVariable String personProjectIds) throws FebsException {
         try {

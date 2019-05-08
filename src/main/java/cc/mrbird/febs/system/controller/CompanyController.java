@@ -14,6 +14,7 @@ import com.google.common.collect.Lists;
 import com.wuwenze.poi.ExcelKit;
 import com.wuwenze.poi.handler.ExcelReadHandler;
 import com.wuwenze.poi.pojo.ExcelErrorField;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,11 +46,13 @@ public class CompanyController extends BaseController {
 
     @GetMapping
     @RequiresPermissions("company:view")
+    @ApiOperation(value = "查询客户信息")
     public Map<String, Object> ContractList(QueryRequest request, Company company) {
         return getDataTable(this.companyService.findCompanyDetail(company, request));
     }
 
     @PostMapping("uploadAvatar")
+    @ApiOperation(value = "上传客户头像")
     //使用MultipartFile 作为入参
     public FileMsg uploadAvatar(@RequestParam(name="file") MultipartFile file,
                                 @NotBlank(message = "{required}") String companyId,
@@ -77,13 +80,15 @@ public class CompanyController extends BaseController {
     }
 
     @GetMapping("check/{companyName}")
+    @ApiOperation(value = "检查客户名称")
     public boolean checkCompanyName(@NotBlank(message = "{required}") @PathVariable String companyName) {
         return this.companyService.findCompany(companyName) == null;
     }
 
-    @Log("查找公司")
+    @Log("查找客户")
     @GetMapping("/{companyName}")
-    @RequiresPermissions("company:delete")
+    @RequiresPermissions("company:view")
+    @ApiOperation(value = "查询客户信息")
     public Company findCompany(@NotBlank(message = "{required}") @PathVariable String companyName) throws FebsException {
         try {
             return this.companyService.findCompany(companyName);
@@ -97,6 +102,7 @@ public class CompanyController extends BaseController {
     @Log("新增客户")
     @PostMapping
     @RequiresPermissions("company:add")
+    @ApiOperation(value = "新增客户")
     public void addCompany(@Valid Company company) throws FebsException {
         try {
             this.companyService.createCompany(company);
@@ -110,6 +116,7 @@ public class CompanyController extends BaseController {
     @Log("删除客户")
     @DeleteMapping("/{deptIds}")
     @RequiresPermissions("company:delete")
+    @ApiOperation(value = "删除客户")
     public void deleteCompany(@NotBlank(message = "{required}") @PathVariable String deptIds) throws FebsException {
         try {
             String[] ids = deptIds.split(StringPool.COMMA);
@@ -124,6 +131,7 @@ public class CompanyController extends BaseController {
     @Log("修改客户信息")
     @PutMapping
     @RequiresPermissions("company:update")
+    @ApiOperation(value = "修改客户信息")
     public void updateCompany(@Valid Company company) throws FebsException {
         try {
             this.companyService.updateCompany(company);
@@ -137,6 +145,7 @@ public class CompanyController extends BaseController {
     @Log("导出客户信息")
     @PostMapping("excel")
     @RequiresPermissions("company:export")
+    @ApiOperation(value = "导出客户信息")
     public void export(Company company, QueryRequest request, HttpServletResponse response) throws FebsException {
         try {
             List<Company> companies = this.companyService.findCompanies(company, request);
@@ -151,6 +160,7 @@ public class CompanyController extends BaseController {
     @Log("导入客户信息")
     @PostMapping("import")
     @RequiresPermissions("company:import")
+    @ApiOperation(value = "导入客户信息")
     public Map<String, Object> importCompany(@RequestParam MultipartFile file)
             throws Exception {
         long beginMillis = System.currentTimeMillis();
