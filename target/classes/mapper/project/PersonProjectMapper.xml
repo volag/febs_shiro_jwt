@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.project.dao.PersonProjectMapper">
+    <resultMap id="BaseResultMap" type="cc.mrbird.febs.project.domain.PersonProject">
+        <id column="PERSON_PROJECT_ID" jdbcType="DECIMAL" property="personProjectId"/>
+        <result column="PROJECT_ID" jdbcType="DECIMAL" property="projectId"/>
+        <result column="PERSON_ID" jdbcType="DECIMAL" property="personId"/>
+        <result column="PERSON_STATUS" jdbcType="VARCHAR" property="personStatus"/>
+        <result column="personName" jdbcType="VARCHAR" property="personName"/>
+        <result column="phone" jdbcType="VARCHAR" property="phone"/>
+        <result column="PROJECT_STATUS" jdbcType="VARCHAR" property="projectStatus"/>
+        <result column="gatherStatus" jdbcType="VARCHAR" property="gatherStatus"/>
+        <result column="COMPANY_NAME" jdbcType="VARCHAR" property="companyName"/>
+        <result column="PROJECT_NAME" jdbcType="VARCHAR" property="projectName"/>
+        <result column="TITLE" jdbcType="VARCHAR" property="title"/>
+        <result column="DESCRIPTION" jdbcType="VARCHAR" property="description"/>
+        <result column="USER_ID" jdbcType="DECIMAL" property="userId"/>
+        <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="MODIFY_TIME" jdbcType="TIMESTAMP" property="modifyTime"/>
+    </resultMap>
+
+    <select id="findPersonProjectDetail" parameterType="personProject" resultMap="BaseResultMap">
+        select
+        t.PERSON_PROJECT_ID,
+        t.PERSON_ID,
+        t.PROJECT_ID,
+        t.PERSON_STATUS,
+        t.USER_ID,
+        t.MODIFY_TIME,
+        t.CREATE_TIME,
+        t.TITLE,
+        t.DESCRIPTION,
+        tp.PERSON_NAME personName,
+        tp.MOBILE_PHONE phone,
+        tpp.PROJECT_STATUS,
+        tpp.COMPANY_NAME,
+        tpp.PROJECT_NAME,
+        tpp.GATHER_STATUS gatherStatus
+        from t_person_project t
+        LEFT JOIN t_person tp on (tp.PERSON_ID = t.PERSON_ID)
+        LEFT JOIN t_project tpp on tpp.PROJECT_ID = t.PROJECT_ID
+        where 1=1
+        <if test="personProject.userId != null and personProject.userId != ''">
+            and t.USER_ID = #{personProject.userId}
+        </if>
+        <if test="personProject.projectName!=null and personProject.projectName!=''">
+            and tpp.PROJECT_NAME like '%${personProject.projectName}%'
+        </if>
+        <if test="personProject.companyName!=null and personProject.companyName!=''">
+            and tpp.COMPANY_NAME like '%${personProject.companyName}%'
+        </if>
+        <if test="personProject.projectStatus != null and personProject.projectStatus != ''">
+            AND tpp.PROJECT_STATUS = #{personProject.projectStatus}
+        </if>
+        <if test="personProject.gatherStatus != null and personProject.gatherStatus != ''">
+            AND tpp.GATHER_STATUS = #{personProject.gatherStatus}
+        </if>
+        <if test="personProject.personName!=null and personProject.personName!=''">
+            and tp.PERSON_NAME like '%${personProject.personName}%'
+        </if>
+
+    </select>
+
+</mapper>

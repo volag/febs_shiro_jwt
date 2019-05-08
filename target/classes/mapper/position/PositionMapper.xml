@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.position.dao.PositionMapper">
+    <resultMap id="BaseResultMap" type="cc.mrbird.febs.position.domain.Position">
+        <id column="ID" jdbcType="DECIMAL" property="id"/>
+        <result column="position_name" jdbcType="VARCHAR" property="positionName"/>
+        <result column="ADDRESS" jdbcType="VARCHAR" property="address"/>
+        <result column="SALARY" jdbcType="VARCHAR" property="salary"/>
+        <result column="NEED_EDUCATION" jdbcType="VARCHAR" property="needEducation"/>
+        <result column="ISSUE_COMPANY" jdbcType="VARCHAR" property="issueCompany"/>
+        <result column="DESCRIPTION" jdbcType="VARCHAR" property="description"/>
+        <result column="ISSUE_TIME" jdbcType="DATE" property="issueTime"/>
+        <result column="position_sort" jdbcType="VARCHAR" property="positionSort"/>
+        <result column="NEED_WORK_TIME" jdbcType="VARCHAR" property="needWorkTime"/>
+        <result column="REQUESTED" jdbcType="VARCHAR" property="requested"/>
+        <result column="trade" jdbcType="VARCHAR" property="trade"/>
+        <result column="scale" jdbcType="VARCHAR" property="scale"/>
+        <result column="nature" jdbcType="VARCHAR" property="nature"/>
+        <result column="collectId" jdbcType="DECIMAL" property="collectId"/>
+        <result column="sendId" jdbcType="DECIMAL" property="sendId"/>
+        <result column="userId" jdbcType="DECIMAL" property="userId"/>
+    </resultMap>
+
+    <select id="findPositionDetail" resultType="position" parameterType="position">
+        SELECT
+        u.id,
+        u.position_name,
+        u.address,
+        u.description,
+        u.salary,
+        u.issue_time,
+        u.need_education,
+        u.position_sort,
+        u.need_work_time,
+        u.issue_company,
+        u.requested,
+        u.user_id
+        FROM
+        t_position u
+        LEFT JOIN t_company tc on tc.COMPANY_NAME = u.issue_company
+        WHERE 1 = 1
+        <if test="position.positionName != null and position.positionName != ''">
+            AND u.position_name like '%${position.positionName}%'
+        </if>
+        <if test="position.address != null and position.address != ''">
+            AND u.address like '%${position.address}%'
+        </if>
+        <if test="position.salary != null and position.salary != ''">
+            AND u.SALARY = #{position.salary}
+        </if>
+        <if test="position.trade != null and position.trade != ''">
+            AND tc.trade = #{position.trade}
+        </if>
+        <if test="position.scale != null and position.scale != ''">
+            AND tc.scale = #{position.scale}
+        </if>
+        <if test="position.nature != null and position.nature != ''">
+            AND tc.nature = #{position.nature}
+        </if>
+        <if test="position.createTimeFrom != null and position.createTimeFrom !=''">
+            And u.issue_time &gt; #{position.createTimeFrom}
+        </if>
+        <if test="position.createTimeTo!= null and position.createTimeTo !=''">
+            And u.issue_time &lt; #{position.createTimeTo}
+        </if>
+        <if test="position.userId != null and position.userId != ''">
+            AND u.user_id = #{position.userId}
+        </if>
+        <if test="position.needEducation != null and position.needEducation != ''">
+            AND u.need_education = #{position.needEducation}
+        </if>
+        group by u.position_name
+    </select>
+
+    <select id="findPositionCondition" resultType="position" parameterType="position">
+        SELECT
+        u.id,
+        u.position_name,
+        u.address,
+        u.description,
+        u.salary,
+        u.issue_time,
+        u.need_education,
+        u.position_sort,
+        u.need_work_time,
+        u.issue_company,
+        u.requested,
+        u.user_id
+        FROM
+        t_position u
+        LEFT JOIN t_company tc on tc.COMPANY_NAME = u.issue_company
+        WHERE 1 = 1
+        <if test="position.positionName != null and position.positionName != ''">
+            or u.position_name like '%${position.positionName}%'
+        </if>
+        <if test="position.address != null and position.address != ''">
+            or u.address like '%${position.address}%'
+        </if>
+        <if test="position.salary != null and position.salary != ''">
+            or u.SALARY = #{position.salary}
+        </if>
+        <if test="position.trade != null and position.trade != ''">
+            or tc.trade = #{position.trade}
+        </if>
+        <if test="position.scale != null and position.scale != ''">
+            or tc.scale = #{position.scale}
+        </if>
+        <if test="position.nature != null and position.nature != ''">
+            or tc.nature = #{position.nature}
+        </if>
+        <if test="position.trade != null and position.trade != ''">
+            or tc.trade = #{position.trade}
+        </if>
+        <if test="position.createTimeFrom != null and position.createTimeFrom !=''">
+            And u.issue_time &gt; #{position.createTimeFrom}
+        </if>
+        <if test="position.createTimeTo!= null and position.createTimeTo !=''">
+            And u.issue_time &lt; #{position.createTimeTo}
+        </if>
+        <if test="position.userId != null and position.userId != ''">
+            or u.user_id = #{position.userId}
+        </if>
+        <if test="position.needEducation != null and position.needEducation != ''">
+            or u.need_education = #{position.needEducation}
+        </if>
+
+        group by u.position_name
+    </select>
+
+    <select id="findCollect" resultType="position" parameterType="string">
+        SELECT
+        u.id,
+        u.position_name,
+        u.address,
+        u.description,
+        u.salary,
+        u.issue_time,
+        u.position_sort,
+        u.need_work_time,
+        u.need_education,
+        u.issue_company,
+        u.requested,
+        d.id collectId
+        FROM
+        t_position u
+        LEFT JOIN t_position_collect d ON (u.id = d.position_id)
+        WHERE 1 = 1
+        AND d.user_id = #{userId}
+        group by u.position_name
+    </select>
+
+    <select id="findSend" resultType="position" parameterType="string">
+        SELECT
+        u.id,
+        u.position_name,
+        u.address,
+        u.description,
+        u.salary,
+        u.issue_time,
+        u.position_sort,
+        u.need_work_time,
+        u.need_education,
+        u.issue_company,
+        u.requested,
+        d.id sendId
+        FROM
+        t_position u
+        LEFT JOIN t_position_send d ON (u.id = d.position_id)
+        WHERE 1 = 1
+        AND d.user_id = #{userId}
+        group by u.position_name
+    </select>
+</mapper>

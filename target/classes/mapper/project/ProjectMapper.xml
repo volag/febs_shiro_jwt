@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.project.dao.ProjectMapper">
+    <resultMap id="BaseResultMap" type="cc.mrbird.febs.project.domain.Project">
+        <id column="PROJECT_ID" jdbcType="DECIMAL" property="projectId"/>
+        <result column="PROJECT_CODE" jdbcType="VARCHAR" property="projectCode"/>
+        <result column="projectName" jdbcType="VARCHAR" property="projectName"/>
+        <result column="startTime" jdbcType="DATE" property="startTime"/>
+        <result column="planFinishTime" jdbcType="DATE" property="planFinishTime"/>
+        <result column="projectStatus" jdbcType="VARCHAR" property="projectStatus"/>
+        <result column="PRIORITY_LEVEL" jdbcType="VARCHAR" property="priorityLevel"/>
+        <result column="companyName" jdbcType="VARCHAR" property="companyName"/>
+        <result column="gatherStatus" jdbcType="VARCHAR" property="gatherStatus"/>
+        <result column="CUSTOMER_MANAGER" jdbcType="VARCHAR" property="customerManager"/>
+        <result column="BUSINESS_PERSON" jdbcType="VARCHAR" property="businessPerson"/>
+        <result column="PROJECT_CHARGE" jdbcType="VARCHAR" property="projectCharge"/>
+        <result column="PROJECT_COUNSELOR" jdbcType="VARCHAR" property="projectCounselor"/>
+        <result column="COMPANY_CONTACT" jdbcType="VARCHAR" property="companyContact"/>
+        <result column="SEARCH_PERSON" jdbcType="VARCHAR" property="searchPerson"/>
+        <result column="COMPANY_PAYER" jdbcType="VARCHAR" property="companyPayer"/>
+        <result column="COMPANY_INFO" jdbcType="VARCHAR" property="companyInfo"/>
+        <result column="REPORT_OBJECT" jdbcType="VARCHAR" property="reportObject"/>
+        <result column="SUBORDINATE_POSITION" jdbcType="VARCHAR" property="subordinatePosition"/>
+        <result column="WORK_ADDRESS" jdbcType="VARCHAR" property="workAddress"/>
+        <result column="NUMBER" jdbcType="VARCHAR" property="number"/>
+        <result column="TRADE" jdbcType="CHAR" property="trade"/>
+        <result column="SUITABLE_FUNCTION" jdbcType="VARCHAR" property="suitableFunction"/>
+        <result column="LANGUAGE_REQUIRE" jdbcType="VARCHAR" property="languageRequire"/>
+        <result column="SEX_REQUIRE" jdbcType="CHAR" property="sexRequire"/>
+        <result column="POSITION_LEVEL" jdbcType="VARCHAR" property="positionLevel"/>
+        <result column="POSITION_SORT" jdbcType="VARCHAR" property="positionSort"/>
+        <result column="AGE_REQUIRE" jdbcType="INTEGER" property="ageRequire"/>
+        <result column="POSITION_INFO" jdbcType="VARCHAR" property="positionInfo"/>
+        <result column="POSITION_REASON" jdbcType="VARCHAR" property="positionReason"/>
+        <result column="SALARY_RANGE" jdbcType="VARCHAR" property="salaryRange"/>
+        <result column="BONUS" jdbcType="VARCHAR" property="bonus"/>
+        <result column="WELFARE" jdbcType="VARCHAR" property="welfare"/>
+        <result column="PROGRESS" jdbcType="VARCHAR" property="progress"/>
+        <result column="EXECUTION_ANALYZE" jdbcType="VARCHAR" property="executionAnalyze"/>
+        <result column="USER_ID" jdbcType="DECIMAL" property="userId"/>
+        <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="MODIFY_TIME" jdbcType="TIMESTAMP" property="modifyTime"/>
+    </resultMap>
+
+    <select id="findProjectDetail" parameterType="project" resultMap="BaseResultMap">
+        select
+        t.PROJECT_ID,
+        t.PROJECT_CODE,
+        t.PROJECT_NAME projectName,
+        t.START_TIME startTime,
+        t.PLAN_FINISH_TIME planFinishTime,
+        t.PROJECT_STATUS projectStatus,
+        t.PRIORITY_LEVEL,
+        t.COMPANY_NAME companyName,
+        t.GATHER_STATUS gatherStatus,
+        t.CUSTOMER_MANAGER,
+        t.BUSINESS_PERSON,
+        t.PROJECT_CHARGE,
+        t.PROJECT_COUNSELOR,
+        t.COMPANY_CONTACT,
+        t.SEARCH_PERSON,
+        t.COMPANY_PAYER,
+        t.COMPANY_INFO,
+        t.REPORT_OBJECT,
+        t.SUBORDINATE_POSITION,
+        t.WORK_ADDRESS,
+        t.NUMBER,
+        t.TRADE,
+        t.SUITABLE_FUNCTION,
+        t.LANGUAGE_REQUIRE,
+        t.SEX_REQUIRE,
+        t.POSITION_LEVEL,
+        t.POSITION_SORT,
+        t.AGE_REQUIRE,
+        t.POSITION_INFO,
+        t.POSITION_REASON,
+        t.SALARY_RANGE,
+        t.BONUS,
+        t.WELFARE,
+        t.PROGRESS,
+        t.EXECUTION_ANALYZE,
+        t.USER_ID,
+        t.MODIFY_TIME,
+        t.CREATE_TIME
+        from t_project t
+        where 1=1
+        <if test="project.projectName!=null and project.projectName!=''">
+            and t.PROJECT_NAME like '%${project.projectName}%'
+        </if>
+        <if test="project.projectCode!=null and project.projectCode!=''">
+            and t.PROJECT_CODE like '%${project.projectCode}%'
+        </if>
+        <if test="project.companyName!=null and project.companyName!=''">
+            and t.COMPANY_NAME like '%${project.companyName}%'
+        </if>
+        <if test="project.sexRequire != null and project.sexRequire != ''">
+            AND t.SEX_REQUIRE = #{project.sexRequire}
+        </if>
+        <if test="project.projectStatus != null and project.projectStatus != ''">
+            AND t.PROJECT_STATUS = #{project.projectStatus}
+        </if>
+        <if test="project.gatherStatus != null and project.gatherStatus != ''">
+            AND t.GATHER_STATUS = #{project.gatherStatus}
+        </if>
+        <if test="project.userId != null and project.userId != ''">
+            AND t.USER_ID = #{project.userId}
+        </if>
+        <if test="project.createTimeFrom != null and project.createTimeFrom !=''">
+            And t.CREATE_TIME &gt; #{project.createTimeFrom}
+        </if>
+        <if test="project.createTimeTo!= null and project.createTimeTo !=''">
+            And t.CREATE_TIME &lt; #{project.createTimeTo}
+        </if>
+        <if test="project.startTimeFrom != null and project.startTimeFrom !=''">
+            And t.START_TIME &gt; #{project.startTimeFrom}
+        </if>
+        <if test="project.startTimeTo!= null and project.startTimeTo !=''">
+            And t.START_TIME &lt; #{project.startTimeTo}
+        </if>
+        <if test="project.planFinishTimeFrom != null and project.planFinishTimeFrom !=''">
+            And t.PLAN_FINISH_TIME &gt; #{project.planFinishTimeFrom}
+        </if>
+        <if test="project.planFinishTimeTo!= null and project.planFinishTimeTo !=''">
+            And t.PLAN_FINISH_TIME &lt; #{project.planFinishTimeTo}
+        </if>
+    </select>
+
+
+</mapper>

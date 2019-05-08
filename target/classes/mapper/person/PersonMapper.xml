@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.person.dao.PersonMapper">
+    <resultMap id="BaseResultMap" type="cc.mrbird.febs.person.domain.Person">
+        <id column="PERSON_ID" jdbcType="DECIMAL" property="personId"/>
+        <result column="personName" jdbcType="VARCHAR" property="personName"/>
+        <result column="PERSON_SEX" jdbcType="CHAR" property="personSex"/>
+        <result column="PERSON_SORT" jdbcType="VARCHAR" property="personSort"/>
+        <result column="PERSON_LEVEL" jdbcType="VARCHAR" property="personLevel"/>
+        <result column="BIRTHDAY" jdbcType="DATE" property="birthday"/>
+        <result column="WORK_YEARS" jdbcType="VARCHAR" property="workYears"/>
+        <result column="GRADUATE_TIME" jdbcType="DATE" property="graduateTime"/>
+        <result column="GRADUATE_INSTITUTIONS" jdbcType="VARCHAR" property="graduateInstitutions"/>
+        <result column="MAJOR" jdbcType="VARCHAR" property="major"/>
+        <result column="EDUCATION_BACKGROUND" jdbcType="VARCHAR" property="educationBackground"/>
+        <result column="EMAIL" jdbcType="VARCHAR" property="email"/>
+        <result column="MOBILE_PHONE" jdbcType="VARCHAR" property="mobilePhone"/>
+        <result column="WORK_PHONE" jdbcType="VARCHAR" property="workPhone"/>
+        <result column="FAMILY_PHONE" jdbcType="VARCHAR" property="familyPhone"/>
+        <result column="IDENTITY_CARD" jdbcType="VARCHAR" property="identityCard"/>
+        <result column="NATIONALITY" jdbcType="VARCHAR" property="nationality"/>
+        <result column="NATION" jdbcType="VARCHAR" property="nation"/>
+        <result column="HEIGHT" jdbcType="VARCHAR" property="height"/>
+        <result column="WEIGHT" jdbcType="VARCHAR" property="weight"/>
+        <result column="ACCOUNT" jdbcType="VARCHAR" property="account"/>
+        <result column="MARITAL_STATUS" jdbcType="CHAR" property="maritalStatus"/>
+        <result column="NATIVE_PLACE" jdbcType="VARCHAR" property="nativePlace"/>
+        <result column="CURRENT_ADDRESS" jdbcType="VARCHAR" property="currentAddress"/>
+        <result column="COMPANY_NAME" jdbcType="VARCHAR" property="companyName"/>
+        <result column="POSITION_NAME" jdbcType="VARCHAR" property="positionName"/>
+        <result column="CURRENT_SALARY" jdbcType="VARCHAR" property="currentSalary"/>
+        <result column="OFFICE_TERM" jdbcType="VARCHAR" property="officeTerm"/>
+        <result column="SELF_ASSESSMENT" jdbcType="VARCHAR" property="selfAssessment"/>
+        <result column="WORK_EXPERIENCE" jdbcType="VARCHAR" property="workExperience"/>
+        <result column="PROJECT_EXPERIENCE" jdbcType="VARCHAR" property="projectExperience"/>
+        <result column="EDUCATION_RECORD" jdbcType="VARCHAR" property="educationRecord"/>
+        <result column="TRAIN_RECORD" jdbcType="VARCHAR" property="trainRecord"/>
+        <result column="LANGUAGE_SKILL" jdbcType="VARCHAR" property="languageSkill"/>
+        <result column="COMPUTER" jdbcType="VARCHAR" property="computer"/>
+        <result column="RELATED_SKILL" jdbcType="VARCHAR" property="relatedSkill"/>
+        <result column="CONTENT" jdbcType="VARCHAR" property="content"/>
+        <result column="RESUME" jdbcType="VARCHAR" property="resume"/>
+        <result column="USER_ID" jdbcType="DECIMAL" property="userId"/>
+        <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="MODIFY_TIME" jdbcType="TIMESTAMP" property="modifyTime"/>
+    </resultMap>
+
+    <select id="findPersonDetail" parameterType="person" resultMap="BaseResultMap">
+        select
+        t.PERSON_ID,
+        t.PERSON_NAME personName,
+        t.PERSON_SEX,
+        t.PERSON_SORT,
+        t.PERSON_LEVEL,
+        t.COMPANY_NAME,
+        t.BIRTHDAY,
+        t.ACCOUNT,
+        t.COMPUTER,
+        t.CONTENT,
+        t.CREATE_TIME,
+        t.CURRENT_ADDRESS,
+        t.CURRENT_SALARY,
+        t.EDUCATION_BACKGROUND,
+        t.EDUCATION_RECORD,
+        t.HEIGHT,
+        t.WEIGHT,
+        t.IDENTITY_CARD,
+        t.EMAIL,
+        t.LANGUAGE_SKILL,
+        t.GRADUATE_INSTITUTIONS,
+        t.GRADUATE_TIME,
+        t.WORK_YEARS,
+        t.WORK_EXPERIENCE,
+        t.WORK_PHONE,
+        t.MAJOR,
+        t.MARITAL_STATUS,
+        t.MOBILE_PHONE,
+        t.MODIFY_TIME,
+        t.OFFICE_TERM,
+        t.NATION,
+        t.NATIONALITY,
+        t.NATIVE_PLACE,
+        t.SELF_ASSESSMENT,
+        t.FAMILY_PHONE,
+        t.POSITION_NAME,
+        t.PROJECT_EXPERIENCE,
+        t.TRAIN_RECORD,
+        t.RELATED_SKILL,
+        t.USER_ID,
+        t.RESUME
+        from t_person t
+        where 1=1
+        <if test="person.personName!=null and person.personName!=''">
+            and t.PERSON_NAME like '%${person.personName}%'
+        </if>
+        <if test="person.personLevel!=null and person.personLevel!=''">
+            and t.PERSON_LEVEL = #{person.personLevel}
+        </if>
+        <if test="person.personSort!=null and person.personSort!=''">
+            and t.PERSON_SORT = #{person.personSort}
+        </if>
+        <if test="person.createTimeFrom != null and person.createTimeFrom !=''">
+            And t.CREATE_TIME &gt; #{person.createTimeFrom}
+        </if>
+        <if test="person.createTimeTo!= null and person.createTimeTo !=''">
+            And t.CREATE_TIME &lt; #{person.createTimeTo}
+        </if>
+        <if test="person.personSex != null and person.personSex != ''">
+            AND t.PERSON_SEX = #{person.personSex}
+        </if>
+    </select>
+
+
+</mapper>

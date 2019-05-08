@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.position.dao.PositionSendMapper">
+    <resultMap id="BaseResultMap" type="cc.mrbird.febs.position.domain.PositionSend">
+        <id column="ID" jdbcType="DECIMAL" property="id"/>
+        <result column="USER_Id" jdbcType="DECIMAL" property="userId"/>
+        <result column="POSITION_ID" jdbcType="DECIMAL" property="positionId"/>
+        <result column="COLLECT_TIME" jdbcType="TIMESTAMP" property="sendTime"/>
+    </resultMap>
+
+    <select id="findPositionSendDetail" resultMap="BaseResultMap" parameterType="positionSend">
+        SELECT
+        u.id
+        FROM
+        t_position_send u
+        WHERE u.USER_Id = #{positionSend.userId}
+        and u.POSITION_ID = #{positionSend.positionId}
+    </select>
+
+</mapper>
